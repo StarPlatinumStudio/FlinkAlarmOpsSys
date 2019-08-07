@@ -82,7 +82,7 @@ public class SourceFromSocket extends RichFlatMapFunction<String, String> {
             byte[] bytes = in.getBytes("utf-8");
             jsonBean = JSON.parseObject(bytes, InputJsonBean.class);
         } catch (Exception ex) {
-            stringCollector.collect("JSON Str Parse Fail,Ex:" + ex.getMessage()+"\n");
+            stringCollector.collect("JSON Str Parse Fail\n");
             return;
         }
         try {
@@ -90,9 +90,10 @@ public class SourceFromSocket extends RichFlatMapFunction<String, String> {
             KeywordHelper keywordHelper = new KeywordHelper();
            // log.debug(">>>this.keys.size:" + this.keys.size());
             if (jsonBean.getStatus() == 0) {
-                if (keywordHelper.match(responseStr, this.keys))
-                    stringCollector.collect("math keywords:" + responseStr+"\n");
-                else stringCollector.collect("keywords not math:" + responseStr+"\n");
+                String mathResult=keywordHelper.match(responseStr, this.keys);
+                if (!mathResult.isEmpty())
+                    stringCollector.collect(mathResult+"\n");
+               // else stringCollector.collect("keywords not math:" + responseStr+"\n");
             } else
                 stringCollector.collect("Data Status Error\n");
         } catch (Exception ex) {

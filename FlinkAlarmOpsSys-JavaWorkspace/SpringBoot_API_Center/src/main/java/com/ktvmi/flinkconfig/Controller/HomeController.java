@@ -2,9 +2,8 @@ package com.ktvmi.flinkconfig.Controller;
 
 
 import com.ktvmi.flinkconfig.EntityClass.Greeting;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import com.ktvmi.flinkconfig.EntityClass.WordWithCount;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.concurrent.atomic.AtomicLong;
 
@@ -17,5 +16,9 @@ public class HomeController {
 public Greeting greeting(@RequestParam(value = "name",defaultValue = "World") String name){
     return new Greeting(counter.incrementAndGet(),
             String.format(template,name));
+}
+@PostMapping("/alarm")
+public void getalarm(@RequestBody WordWithCount body){
+    System.out.println(body.toString());
 }
 }

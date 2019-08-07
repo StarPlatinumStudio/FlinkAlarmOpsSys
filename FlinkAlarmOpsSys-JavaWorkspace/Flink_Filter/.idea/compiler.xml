@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="flink-quickstart-java" />
         <module name="Flink_Filter" />
         <module name="flinkquickstartjava" />
       </profile>

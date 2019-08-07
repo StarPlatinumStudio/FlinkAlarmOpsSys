@@ -19,10 +19,12 @@ public class HttpHelper {
             // 创建httpget.
             HttpGet httpget = new HttpGet(apiUrl);
             System.out.println("executing request " + httpget.getURI());
+
             // 执行get请求.
             CloseableHttpResponse response = httpclient.execute(httpget);
             try {
                 // 获取响应实体
+
                 HttpEntity entity = response.getEntity();
                 // 打印响应状态
                 System.out.println(response.getStatusLine());
