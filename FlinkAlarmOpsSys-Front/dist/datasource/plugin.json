@@ -1,0 +1,5 @@
+{
+  "type": "datasource",
+  "name": "Example App Datasource",
+  "id": "grafana-example-app-datasource"
+}
