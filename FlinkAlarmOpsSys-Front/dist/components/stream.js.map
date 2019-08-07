@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/components/stream.js"],"names":["StreamPageCtrl","templateUrl"],"mappings":";;;;;;AACO,YAAMA,cAAN,CAAqB;;;;AAE5BA,MAAAA,cAAc,CAACC,WAAf,GAA6B,wBAA7B","sourcesContent":["\nexport class StreamPageCtrl {\n}\nStreamPageCtrl.templateUrl = 'components/stream.html';\n\n\n"],"file":"stream.js"}

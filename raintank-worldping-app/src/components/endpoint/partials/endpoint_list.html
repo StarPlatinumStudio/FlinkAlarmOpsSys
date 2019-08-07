@@ -1,0 +1,85 @@
+<div class="page-header">
+	<h1 class="rt-h1">Endpoints</h1>
+	<a class="btn btn-success" href="plugins/raintank-worldping-app/page/endpoint-config" ng-show="ctrl.isOrgEditor">
+		<i class="fa fa-plus"></i>
+		New Endpoint
+	</a>
+</div>
+
+<div ng-if="!ctrl.pageReady" class="rt-loading-message-container">
+	<div class="rt-loading-message-inside">
+		<img class="rt-loading-pulse" src="public/plugins/raintank-worldping-app/img/loading-pulse.svg" style="margin-bottom: 10px;">
+		<p class="rt-loading-msg-1">To infinity...and beyond.</p>
+		<p class="rt-loading-msg-2">This is taking longer than expected.</p>
+		<p class="rt-loading-msg-3">We apologize, something may be up. Please try refreshing first, and contact us if this continues to happen.</p>
+	</div>
+</div>
+
+<div ng-if="ctrl.pageReady">
+	<div ng-if="ctrl.endpoints.length === 0" class="wp-empty-endpoint-list">
+		<div style="text-align: center; padding-top: 90px; min-height: 220px; min-width: 400px;  margin: 0 auto;">
+			<i ng-class="icon" class="icon-gf icon-gf-endpoint no-endpoints"></i>
+			<p ng-if="ctrl.isOrgEditor">Looks like you don’t have any endpoints yet.<br>
+				<a class="highlight-word" href="plugins/raintank-worldping-app/page/endpoint-config">Add a new endpoint</a> or
+				<a class="highlight-word" href="dashboard/db/worldping-endpoint-summary?var-endpoint=~google_com_demo">view live demo data.</a>
+			</p>
+			<p ng-if="!ctrl.isOrgEditor">Your org does not have any endpoints.<br>In the meantime,
+				<a class="highlight-word" href="dashboard/db/worldping-endpoint-summary?var-endpoint=~google_com_demo">view some live demo data.</a>
+			</p>
+		</div>
+		<a href="#" ng-click="ctrl.showEndpointDesc = !ctrl.showEndpointDesc">
+			<span ng-hide="ctrl.showEndpointDesc">What's an endpoint?</span>
+			<span><i class="fa fa-caret-right rt-box-accordian-control" ng-hide="ctrl.showEndpointDesc"></i></span>
+			<span ng-show="ctrl.showEndpointDesc">What's an endpoint?</span>
+			<span><i class="fa fa-caret-down" ng-show="ctrl.showEndpointDesc"></i></span>
+		</a>
+		<div class="wp-app-endpointdesc-box" ng-class="{ 'wp-app-endpointdesc-open': ctrl.showEndpointDesc }">
+			<div class="rt-collapse-blurb-box">
+				<p class="rt-helper-blurb">In worldPing, an endpoint is anything you want to monitor.</p>
+				<p class="rt-helper-blurb">When you enter the fully qualified domain name of your endpoint, we will automatically detect what is available to monitor (eg. PING, HTTP, HTTPS) and suggest a customizable set of defaults unique to your endpoint.</p>
+			</div>
+		</div>
+	</div>
+
+	<div ng-if="ctrl.endpoints.length > 0">
+        <div class="gf-form">
+          <span class="gf-form-label width-6">Filter by:</span>
+          <div class="gf-form-select-wrapper">
+            <select class="gf-form-input gf-size-auto" ng-model="ctrl.filter.tag" ng-options="t for t in ctrl.endpointTags()"><option value="">All Tags</option></select>
+          </div>
+        </div>
+		<div class="rt-list-showing-header">
+			<div class="rt-list-status">
+				<span class="small">Showing {{(ctrl.endpoints | filterByTag:ctrl.filter.tag).length}}</span>
+				<span class="small"> of <span class="rt-list-links" ng-click="setTagFilter('')">{{ctrl.endpoints.length}} total</a></span>
+			</div>
+		</div>
+	</div>
+</div>
+
+<section ng-if="ctrl.endpoints.length > 0" class="card-section card-list-layout-list" layout-mode>
+	<ol class="card-list" >
+		<li class="card-item-wrapper" ng-repeat="endpoint in ctrl.endpoints | filterByTag:ctrl.filter.tag | orderBy:ctrl.sort_field">
+			<div class="card-item pointer" ng-click="ctrl.gotoDashboard(endpoint, $event)">
+				<div class="card-item-header card-item-header--wp-icons card-item-header-action">
+					<rt-endpoint-health endpoint="endpoint" ctrl="ctrl"></rt-endpoint-health>
+					<a style="margin-left: 15px; vertical-align: sub;" href="plugins/raintank-worldping-app/page/endpoint-details?endpoint={{endpoint.id}}">
+						<i ng-class="icon" class="icon-gf icon-gf-settings" bs-tooltip="'Endpoint<br>Details & Config'"></i>
+					</a>
+				</div>
+				<div class="card-item-body">
+					<div class="card-item-details">
+						<div class="card-item-name">
+							<a href="dashboard/db/worldping-endpoint-summary?&var-endpoint={{endpoint.slug}}&var-probe=All">
+								{{endpoint.name}}
+							</a>
+							<span ng-repeat="tag in endpoint.tags" tag-color-from-name="tag"  class="label label-tag">
+								{{tag}}
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li>
+	</ol>
+</section>

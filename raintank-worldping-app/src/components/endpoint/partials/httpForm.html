@@ -1,0 +1,154 @@
+<!-- Begin HTTP Section -->
+<div class="gf-form-group gf-form-group--header" id="http">
+  <div class="wp-config-box--hit-area" ng-click="ctrl.showHTTP = !ctrl.showHTTP">
+    <div class="playlist-column-header section-header-flex-container">
+      <h3 class="page-headering">HTTP</h3>
+      <div>
+        <a href="#">
+          <!-- Monitoring -->
+          <i class="icon-gf icon-gf-monitoring-tiny" style="font-size:17px; vertical-align: text-bottom;" ng-show="ctrl.checks['http'].enabled"></i>
+          <span class="freqMsg" ng-show="ctrl.checks['http'].enabled" > Every {{ctrl.checks['http'].frequency}}s from {{ctrl.probeCount(ctrl.checks['http'])}} {{ctrl.probeCount(ctrl.checks['http']) == 1 ? "Probe" : "Probes"}} |</span>
+          <i class="icon-gf icon-gf-monitoring-tiny" style="font-size:17px; vertical-align: text-bottom;"ng-show="!ctrl.checks['http'].enabled"></i>
+          <span class="freqMsg disabled" ng-show="!ctrl.checks['http'].enabled" > Not enabled |</span>
+          <span class="freqMsg" ng-show="!ctrl.checks['http'].enabled && ctrl.discovered" > Not Discovered |</span>
+          <!-- Checks -->
+          <i ng-show="ctrl.checks['http'].enabled" class="icon-gf icon-gf-status" style="font-size:17px; vertical-align: sub;"></i>
+          <span ng-show="ctrl.checks['http'].enabled" class="freqMsg" bs-tooltip="'Estimated checks per month, in Millions'">{{ctrl.totalChecks(ctrl.checks['http'])| number:1}}M/mo</span><span ng-show="ctrl.checks['http'].enabled" class="freqMsg"> |</span
+          <!-- Configure -->
+          <span class="highlight-word"> Configure</span>
+          <span><i class="fa fa-caret-down" ng-show="ctrl.showHTTP"></i></span>
+          <span><i class="fa fa-caret-right rt-box-accordian-control" ng-hide="ctrl.showHTTP"></i></span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="wp-config-box rt-page-box" id="http" ng-class="{ 'http-open': ctrl.showHTTP }">
+    <div>
+        <div class="gf-form">
+          <i class="icon-gf icon-gf-monitoring inline-icon"></i>
+          <h3 class="inline-header">Monitoring</h3>
+          <editor-checkbox text="Enabled" model="ctrl.checks['http'].enabled"></editor-checkbox>
+        </div>
+        <div class="endpoint-config-left-margin">
+          <p>At the selected <span class="emphasis-word">frequency</span>, we'll do a <span class="emphasis-word">single</span> HTTP request to your <span class="emphasis-word">URL</span>, from each probe within your <span class="emphasis-word">dynamic or static footprint</span>.</p>
+          <div class="gf-form-group">
+            <div class="gf-form">
+              <span class="gf-form-label width-9">Frequency</span>
+              <div class="gf-form-select-wrapper">
+                <select class="gf-form-input gf-size-auto" ng-model="ctrl.checks['http'].frequency" ng-options="f.value as f.label for f in ctrl.frequencyOpts"></select>
+              </div>
+            </div>
+            <endpoint-probe-select model="ctrl.checks['http']" probes="ctrl.probes" style="modal-collector-select"></endpoint-probe-select>
+          </div>
+
+          <div class="gf-form-group">
+            <div class="gf-form">
+              <label class="gf-form-label width-9">Hostname</label>
+              <input class="gf-form-input width-31" type="text" ng-model="ctrl.checks['http'].settings.host" placeholder="www.example.com">
+            </div>
+            <div class="gf-form-inline">
+              <div class="gf-form">
+                <label class="gf-form-label width-9">Port</label>
+                <input class="gf-form-input width-11" type="number" ng-model="ctrl.checks['http'].settings.port" min="1" max="65535">
+              </div>
+              <div class="gf-form">
+                <label class="gf-form-label width-9">Timeout (s)</label>
+                <input class="gf-form-input width-11" type="number" ng-model="ctrl.checks['http'].settings.timeout" min="1" max="10">
+                <i class="fa fa-info-circle" bs-tooltip="'The timeout, in seconds, is the amount of time our probe will wait for a response.'" />
+              </div>
+            </div>
+          </div>
+          <div class="gf-form-group">
+            <div class="gf-form-inline">
+              <div class="gf-form">
+                <label class="gf-form-label width-9">Path</label>
+                <input class="gf-form-input width-16" type="text" ng-model="ctrl.checks['http'].settings.path" placeholder="www.example.com">
+              </div>
+              <div class="gf-form">
+                <label class="gf-form-label width-9">Method</label>
+                <div class="gf-form-select-wrapper">
+                  <select class="gf-form-input gf-size-auto" ng-model="ctrl.checks['http'].settings.method" ng-options="m for m in ['GET', 'PUT', 'POST', 'DELETE', 'HEAD', 'PATCH']"></select>
+                </div>
+              </div>
+            </div>
+            <div class="gf-form-inline">
+              <div class="gf-form">
+                <label class="gf-form-label width-9">Download Limit</label>
+                <input class="gf-form-input width-8" type="text" ng-model="ctrl.checks['http'].settings.downloadLimit">
+                <i class="fa fa-info-circle" bs-tooltip="'The maximum amount of data the probe will attempt to download (in bytes, max {{ctrl.formatSize(ctrl.quotas.downloadLimit.limit || 102400)}}).'" />
+              </div>
+            </div>
+            <div class="gf-form-inline">
+              <div class="gf-form">
+                <label class="gf-form-label width-9">Content Match</label>
+                <input class="gf-form-input width-25" type="text" ng-model="ctrl.checks['http'].settings.expectRegex">
+                <i class="fa fa-info-circle" bs-tooltip="'Content Match checks to see if your string occurs in the first 100KB of the page download. Pro-tip: Regex is supported.  Wrap the expression in !\'s to invert the match.'" />
+              </div>
+            </div>
+            <div class="gf-form gf-form--v-stretch">
+              <label class="gf-form-label width-9">Headers</label>
+              <textarea class="gf-form-input width-31" type="textarea" ng-model="ctrl.checks['http'].settings.headers"></textarea>
+            </div>
+            <div class="gf-form gf-form--v-stretch" ng-show="['PUT', 'POST', 'DELETE', 'PATCH'].indexOf(ctrl.checks.http.settings.method) >= 0">
+              <label class="gf-form-label width-9">{{ctrl.checks.http.settings.method}} Body</label>
+              <textarea class="gf-form-input width-31" type="textarea" ng-model="ctrl.checks.http.settings.body"></textarea>
+            </div>
+          </div>
+          <div class="gf-form-group" ng-show="ctrl.checks['http'].enabled">
+            <div class="rt-body-copy">
+              <span class="pluginlist-none-installed" style="margin: 0;"><i class="icon-gf icon-gf-status wp-icon-medium"></i> This HTTP monitor will generate approximately <span class="wp-note--mild-emphasis">{{ctrl.totalChecks(ctrl.checks['http'])| number:1}} Million</span><span class="pluginlist-none-installed"> checks per month.</span>
+            </div>
+          </div>
+        </div>
+      <div class="gf-form-group">
+        <div>
+          <i class="icon-gf icon-gf-online inline-icon"></i>
+          <h3 class="inline-header">Health</h3>
+        </div>
+        <div class="endpoint-config-left-margin">
+          <div class="rt-box-interior-content" style="margin-top: 10px;">
+            <div class="rt-body-copy">
+              <span class="rt-body-copy" style="margin: 0;">If</span>
+              <div class="rt-input-styles editor-option">
+                <label><input type="number" min="1" value="3"class="gf-form-natural-language-input max-width-3" ng-model="ctrl.checks['http'].healthSettings.num_collectors"></select></label>
+              </div>
+              <span class="rt-body-copy">or more probes report <span class="emphasis-word">connection errors</span> for</span>
+              <div class="rt-input-styles editor-option">
+                <label><input type="number" min="1" value="5" class="gf-form-natural-language-input max-width-3" ng-model="ctrl.checks['http'].healthSettings.steps"></select></label>
+              </div>
+              <span class="rt-body-copy">or more consecutive checks, health will be marked as down <img width="20px" height="20px" src="public/plugins/raintank-worldping-app/img/critical.svg" class="rt-inline-health-icon">.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gf-form-group">
+        <div class="gf-form">
+          <i class="icon-gf icon-gf-alert inline-icon"></i>
+          <h3 class="inline-header">Alerting</h3>
+          <editor-checkbox text="Enabled" model="ctrl.checks['http'].healthSettings.notifications.enabled"></editor-checkbox>
+        </div>
+        <div class="endpoint-config-left-margin">
+          <div class="rt-box-interior-content">
+            When the HTTP health changes, send a notification to the following emails: </span>
+            <div class="gf-form">
+              <textarea class="gf-form-input max-width-30" type="textarea" ng-model="ctrl.checks['http'].healthSettings.notifications.addresses"></textarea>
+           </div>
+            <div>
+              <span class="small">Comma separated email addresses accepted.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="endpoint-config-left-margin" ng-if="ctrl.endpoint.id">
+      <div class="gf-form-button-row">
+        <button type="submit" class="btn btn-success" ng-click="ctrl.updateCheck(ctrl.checks['http'])">Update HTTP Settings</button>
+        <a class="btn btn-link" ng-click="ctrl.cancel()">Cancel</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End HTTP Section -->

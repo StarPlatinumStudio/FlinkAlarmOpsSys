@@ -1,0 +1,150 @@
+<div ng-if="!ctrl.probe.id" class="page-header page-header--flex">
+  <h1>Add a private probe</h1>
+  <span class="form-step-count page-header--flex-item">Step 1 of 2</span>
+</div>
+<p ng-if="!ctrl.probe.id" class="playlist-description">Private probes are the way to reach the deepest, darkest corners of your private networks - or, a way to extend our global footprint. Acts exactly like a public probe, but you control it and the results of each test are then transfered back to the worldPing backend.</p>
+
+<form ng-if="!ctrl.probe.id && !ctrl.requiresUpgrade" name="collectorNameForm">
+  <div class="gf-form">
+      <label class="gf-form-label width-7">Probe Name</label>
+      <input class="gf-form-input max-width-21" type="text" ng-model="ctrl.probe.name" required>
+  </div>
+  <div class="gf-form-button-row">
+    <button type="submit" class="btn btn-success" required ng-click="collectorNameForm.$valid && ctrl.add()">Next -> Install Probe</button>
+    <a class="btn btn-link" href="#">Cancel</a>
+  </div>
+</form>
+
+<div ng-if="ctrl.requiresUpgrade">
+  <div class="rt-exclamation-probe--container">
+    <i class="fa fa-exclamation-triangle rt-exclamation-probe"></i>
+    <span class="rt-dashboard-blurb">Private probes are only available on paid accounts.</span>
+  </div>
+  <div class="gf-form-button-row">
+    <a class="btn btn-secondary" href="https://grafana.com/{{ctrl.org.slug}}/worldping/upgrade" target="_blank">Upgrade worldPing now</a>
+    <a class="btn btn-link" ng-click="ctrl.cancel();">Cancel</a>
+  </div>
+</div>
+
+<!-- Step 2 - Show after collector record has been added. -->
+
+<div ng-if="ctrl.probe.id">
+  <div class="page-header page-header--flex">
+    <h1>Add a private probe</h1>
+    <span class="form-step-count page-header--flex-item">Step 2 of 2</span>
+  </div>
+
+  <div class="message-header">
+    <div class="message-content">
+      <div ng-show="ctrl.newCollector">
+        <p><i class="icon-gf icon-gf-check wp-icon-success"></i><strong>Probe record added</strong>. Please install the application or <a class="highlight-word" ng-href="plugins/raintank-worldping-app/page/probe-details?probe={{ctrl.probe.id}}">skip to probe summary</a>.</p>
+      </div>
+    </div>
+    <div class="gf-form-group">
+      <i class="icon-gf icon-gf-probe inline-icon inline-icon--endpoint"></i>
+      <h2 class="inline-header">{{ctrl.probe.name }}</h2>
+    </div>
+  </div>
+
+  <div class="gf-form-group gf-form-group--header">
+    <div class="playlist-column-header section-header-flex-container">
+      <h3 class="page-headering">Install the probe application</h3>
+      <div>
+        Setup time: 5-7 minutes
+      </div>
+    </div>
+  </div>
+
+  <div>
+  Select Install method.
+  <button class="btn btn-inverse" ng-click="ctrl.setInstallMethod('deb')">Debian</button>
+  <button class="btn btn-inverse" ng-click="ctrl.setInstallMethod('deb')">Ubuntu</button>
+  <button class="btn btn-inverse" ng-click="ctrl.setInstallMethod('rpm')">Centos</button>
+  <button class="btn btn-inverse" ng-click="ctrl.setInstallMethod('docker')">Docker</button>
+  <button class="btn btn-inverse" ng-click="ctrl.setInstallMethod('manual')">Manual</button>
+  </div>
+  <br/><br/>
+  <div ng-show="ctrl.installMethod.deb">
+    <div class="gf-form-group">
+      <h3><span class="emphasis">1. </span>Add repository to apt sources.</h3>
+      <pre><code>curl -s https://packagecloud.io/install/repositories/raintank/raintank/script.deb.sh | sudo bash</code></pre>
+    </div>
+    <div class="gf-form-group">
+      <h3><span class="emphasis">2. </span>Install the raintank-probe package</h3>
+      <pre><code>sudo apt-get install raintank-probe</code></pre>
+    </div>
+    <div class="gf-form-group">
+      <h3><span class="emphasis">3. </span>Update the configuration</h3>
+      <p>Update the configuration file located at /etc/raintank/probe.ini with the following contents, replacing <b>GrafanaNetApiKey</b> with an existing Grafana.com Api Key or <a class="highlight-word" href="//grafana.com/profile/api-keys" target="_blank">Generate a new API key</a></p>
+      <pre><code>
+name = <span class="h">{{ctrl.probe.name}}</span>
+server-url = wss://worldping-api.raintank.io/
+tsdb-url = https://tsdb.raintank.io/
+api-key = GrafanaNetAPIKey
+</code></pre>
+    </div>
+    <div class="gf-form-group">
+      <h3><span class="emphasis">4. </span>Start the app</h3>
+      <pre><code>sudo service raintank-probe start</code></pre>
+    </div>
+  </div>
+  <div ng-show="ctrl.installMethod.rpm">
+    <div class="gf-form-group">
+      <h3><span class="emphasis">1. </span>Add yum repository.</h3>
+      <pre><code>curl -s https://packagecloud.io/install/repositories/raintank/raintank/script.rpm.sh | sudo bash</code></pre>
+    </div>
+    <div class="gf-form-group">
+      <h3><span class="emphasis">2. </span>Install the raintank-probe package</h3>
+      <pre><code>sudo yum install raintank-probe</code></pre>
+    </div>
+    <div class="gf-form-group">
+      <h3><span class="emphasis">3. </span>Update the configuration</h3>
+      <p>Update the configuration file located at /etc/raintank/probe.ini with the following contents, replacing <b>GrafanaNetApiKey</b> with an existing Grafana.com Api Key or <a class="highlight-word" href="//grafana.com/profile/api-keys" target="_blank">Generate a new API key</a></p>
+      <pre><code>
+name = <span class="h">{{ctrl.probe.name}}</span>
+server-url = wss://worldping-api.raintank.io/
+tsdb-url = https://tsdb.raintank.io/
+api-key = GrafanaNetAPIKey
+</code></pre>
+    </div>
+    <div class="gf-form-group">
+      <h3><span class="emphasis">4. </span>Start the app</h3>
+      <pre><code>sudo service raintank-probe start</code></pre>
+    </div>
+  </div>
+
+  <div ng-show="ctrl.installMethod.docker">
+   <h3>Launch a container using the raintank/raintank-probe image</h3>
+   <p>replace <b>GrafanaNetApiKey</b> with an existing Grafana.com Api Key or <a class="highlight-word" href="//grafana.com/profile/api-keys" target="_blank">Generate a new API key</a></p>
+    <pre><code>docker run -e RTPROBE_API_KEY=GrafanaNetApiKey -e RTPROBE_NAME="<span class="h">{{ctrl.probe.name}}</span>" raintank/raintank-probe </code></pre>
+  </div>
+  <div ng-show="ctrl.installMethod.manual">
+    <div class="gf-form-group">
+      <h3><span class="emphasis">1. </span>Install Go.</h3>
+      <p>>> <a href="https://golang.org/doc/install">https://golang.org/doc/install</a>.</p>
+      <p>Once you've installed Go, you'll need to configure your workspace like so: <a href="https://golang.org/doc/code.html#Workspaces">https://golang.org/doc/code.html#Workspaces</a></p>
+    </div>
+    <div class="gf-form-group">
+      <h3><span class="emphasis">2. </span>Install raintank-probe.</h3>
+      <pre><code>go get github.com/raintank/raintank-probe</code></pre>
+    </div>
+    <div class="gf-form-group">
+      <h3><span class="emphasis">3. </span>Create a probe.ini configuration file with the below contents, replacing <b>GrafanaNetApiKey</b> with an existing Grafana.com Api Key or <a class="highlight-word" href="//grafana.com/profile/api-keys" target="_blank">Generate a new API key</a></h3>
+<pre><code>
+name = <span class="h">{{ctrl.probe.name}}</span>
+server-url = wss://worldping-api.raintank.io/
+tsdb-url = https://tsdb.raintank.io/
+api-key = GrafanaNetAPIKey
+</code></pre>
+    </div>
+    <div class="gf-form-group">
+      <h3><span class="emphasis">4. </span>Start the app</h3>
+      <pre><code>raintank-probe -config <span class="h">/path/to/probe.ini</span></code></pre>
+    </div>
+  </div>
+
+  <div>
+    <a href="plugins/raintank-worldping-app/page/probe-details?probe={{ctrl.probe.id}}"><button class="btn btn-success">Continue to Summary and Verify</button></a>
+  <!--       <a href="#" class="btn-link">Having issues? Read our troubleshooting guide.</a> -->
+  </div>
+</div>

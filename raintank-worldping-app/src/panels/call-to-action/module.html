@@ -1,0 +1,123 @@
+<h4 style="font-weight: 300;">Greetings.</h4>
+<p class="rt-dashboard-blurb">Your worldPing account is <b>{{ctrl.org.strChecksPerMonth}}</b> on the <b>{{ctrl.org.wpPlan || 'Free'}}</b> plan. <a href="https://grafana.com/{{ctrl.org.slug}}/worldping/upgrade" target="_blank" class="external-link">Go to account.</a></p>
+<div class="rt-dash-flex-container">
+    <div class="rt-dash-flex-item">
+        <div class="rt-CTA-item">
+            <div class="rt-dashboard-icons-container">
+                <i class="icon-gf icon-gf-check wp-icon-success"></i>
+            </div>
+            <span class="rt-dashboard-blurb rt-blurb-success">Install worldPing.</span>
+        </div>
+
+        <!-- Endpoint Section -->
+        <div ng-if="ctrl.endpointStatus === 'noEndpoints'" class="rt-CTA-item">
+            <div class="rt-dashboard-icons-container">
+                <i class="icon-gf icon-gf-endpoint rt-dashboard-icons"></i>
+            </div>
+            <div class="rt-dashboard-icons-copy-container">
+              <a href="plugins/raintank-worldping-app/page/endpoint-config" class="rt-dashboard-blurb">
+                <span>Add your first endpoint.</span>
+                <span class="rt-dashboard-icons-subcopy">An endpoint is any domain, IP address</br>or URL you would like to monitor.</span>
+              </a>
+            </div>
+        </div>
+        <div  ng-if="ctrl.endpointStatus === 'hasEndpoints'" class="rt-CTA-item">
+            <div class="rt-dashboard-icons-container">
+                <i class="icon-gf icon-gf-check wp-icon-success"></i>
+            </div>
+            <span class="rt-dashboard-blurb rt-blurb-success">Add your first endpoint.</span>
+        </div>
+        <!-- End Endpoint Section -->
+
+        <!-- Upgrade Section -->
+        <div ng-if="ctrl.org && ctrl.requiresUpgrade && ctrl.endpointStatus === 'noEndpoints'" class="rt-CTA-item">
+            <div class="rt-dashboard-icons-container">
+                <i class="fa fa-credit-card rt-dashboard-icons-upcoming"></i>
+            </div>
+            <div class="rt-dashboard-icons-copy-container">
+                <a href="https://grafana.com/{{ctrl.org.slug}}/worldping/upgrade" target="_blank" class="rt-dashboard-blurb rt-blurb-upcoming">
+                    <span>Upgrade your account.</span>
+                </a>
+            </div>
+        </div>
+        <div ng-if="ctrl.org && ctrl.requiresUpgrade && ctrl.endpointStatus === 'hasEndpoints'" class="rt-CTA-item">
+            <div class="rt-dashboard-icons-container">
+                <i class="fa fa-credit-card rt-dashboard-icons"></i>
+            </div>
+            <div class="rt-dashboard-icons-copy-container">
+                <a href="https://grafana.com/{{ctrl.org.slug}}/worldping/upgrade" target="_blank" class="rt-dashboard-blurb">
+                    <span>Upgrade your account.</span>
+                    <span class="rt-dashboard-icons-subcopy">Unlimited endpoints. Pay-as-you-go pricing. Upgrade instantly.</span>
+                </a>
+            </div>
+        </div>
+        <div ng-if="ctrl.org && !ctrl.requiresUpgrade" class="rt-CTA-item">
+            <div class="rt-dashboard-icons-container">
+                <i class="icon-gf icon-gf-check wp-icon-success"></i>
+            </div>
+            <span class="rt-dashboard-blurb rt-blurb-success">Upgrade your account</span>
+        </div>
+        <!-- End Upgrade Section -->
+        <!-- Getting the most Section -->
+        <div  class="rt-CTA-item">
+            <div class="rt-dashboard-icons-container">
+                <i class="fa fa-book rt-dashboard-icons-upcoming"></i>
+            </div>
+            <a class="rt-dashboard-blurb rt-blurb-upcoming" href="https://worldping.raintank.io/docs" target="_blank">Read our docs</a>
+        </div>
+        <!-- End getting the most Section -->
+    </div>
+
+    <!-- Over free tier -->
+    <div class="rt-dash-flex-container" ng-if="ctrl.aboveFreeTier">
+      <div class="rt-dash-flex-item rt-dash--warning">
+        <div class="rt-CTA-item">
+            <div class="rt-dashboard-icons-container">
+                <i class="fa fa-warning rt-dashboard-icons-warning"></i>
+            </div>
+            <div class="rt-dashboard-icons-copy-container">
+                <a href="https://grafana.com/{{ctrl.org.slug}}/worldping/upgrade" target="_blank" class="rt-dashboard-blurb">
+                    <span>Time to upgrade now!</span>
+                    <span class="rt-dashboard-icons-subcopy">You are using more than the 1 Million checks allowed on the free tier. Click to upgrade your plan.</span>
+                </a>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- End over free tier -->
+</div>
+<!-- Data source update -->
+<div class="rt-dash-flex-container" ng-if="ctrl.datasourceUpgrader.needsUpgrade()">
+  <div class="rt-dash-flex-item rt-dash--warning">
+    <div class="rt-CTA-item">
+        <div class="rt-dashboard-icons-container">
+            <i class="icon-gf icon-gf-alert rt-dashboard-icons-alert"></i>
+        </div>
+        <div class="rt-dashboard-icons-warning-container">
+          <span>worldPing now supports Grafana Alerting!</span>
+          <span class="rt-dash--warning-subcopy">To start using alerting, an update to your worldPing data source <strong>is required</strong>.</span>
+          <a href="#" class="btn btn-inverse" ng-if="ctrl.datasourceUpgrader.canUpgrade()" ng-click="ctrl.datasourceUpgrader.upgrade()">Update now</a>
+          <div class="rt-dash--warning-subcopy" ng-if="!ctrl.datasourceUpgrader.canUpgrade()">Please contact your admin to have them perform the update.</div>
+        </div>
+    </div>
+  </div>
+</div>
+<!-- End Data source update -->
+
+<!-- Data source update -->
+<div class="rt-dash-flex-container" ng-if="ctrl.org && !ctrl.datasourceUpgrader.needsUpgrade()">
+  <div class="rt-dash-flex-item">
+    <div class="rt-CTA-item">
+      <div class="rt-dashboard-icons-container">
+        <i class="icon-gf icon-gf-alert wp-icon-success"></i>
+      </div>
+      <div class="rt-dashboard-icons-copy-container">
+          <a href="https://grafana.com/dashboards?category=worldping" target="_blank" class="rt-dashboard-blurb">
+              <span>Get started with Alerting</span>
+              <span class="rt-dashboard-icons-subcopy">Visit Grafana.com to find a sample alerting dashboard and learn in minutes.</span>
+          </a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Data source update -->
