@@ -12,6 +12,7 @@ import java.util.List;
 import java.util.Properties;
 
 import com.ktvmi.flinkconfig.EntityClass.AlarmConfig;
+import com.ktvmi.flinkconfig.EntityClass.AlarmRule;
 import com.ktvmi.flinkconfig.EntityClass.ResponseMsg;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.couchbase.CouchbaseProperties;
@@ -42,7 +43,7 @@ public class NacosController {
         return content;
     }
     @PostMapping("/alarm")
-    public ResponseMsg setalarm(@Valid @RequestBody AlarmConfig alarmConfig)throws NacosException{
+    public ResponseMsg setalarm(@Valid @RequestBody AlarmRule alarmRule)throws NacosException{
         try {
             configService.publishConfig(alarmConfig.getDataId(),alarmConfig.getGroup(),alarmConfig.getContent());
         }

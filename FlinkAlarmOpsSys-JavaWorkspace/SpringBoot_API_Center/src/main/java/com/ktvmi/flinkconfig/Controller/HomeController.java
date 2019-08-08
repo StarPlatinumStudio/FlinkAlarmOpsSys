@@ -1,6 +1,8 @@
 package com.ktvmi.flinkconfig.Controller;
 
 
+import com.alibaba.fastjson.JSON;
+import com.ktvmi.flinkconfig.EntityClass.AlarmRule;
 import com.ktvmi.flinkconfig.EntityClass.Greeting;
 import com.ktvmi.flinkconfig.EntityClass.WordWithCount;
 import org.springframework.web.bind.annotation.*;
@@ -18,7 +20,8 @@ public Greeting greeting(@RequestParam(value = "name",defaultValue = "World") St
             String.format(template,name));
 }
 @PostMapping("/alarm")
-public void getalarm(@RequestBody WordWithCount body){
-    System.out.println(body.toString());
+public void getalarm(@RequestBody AlarmRule body){
+
+    System.out.println(JSON.toJSONString(body));
 }
 }

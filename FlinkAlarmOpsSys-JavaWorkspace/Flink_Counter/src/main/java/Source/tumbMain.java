@@ -6,6 +6,7 @@ import Source.Custom.SourceFromSocketClient;
 import org.apache.flink.api.common.functions.FlatMapFunction;
 import org.apache.flink.api.common.functions.ReduceFunction;
 import org.apache.flink.api.java.utils.ParameterTool;
+import org.apache.flink.configuration.Configuration;
 import org.apache.flink.streaming.api.datastream.DataStream;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.streaming.api.windowing.time.Time;
@@ -55,7 +56,7 @@ public class tumbMain {
                 });
 
         // print the results with a single thread, rather than in parallel
-        windowCounts.addSink(new HttpSink());
+        windowCounts.addSink(new HttpSink(1001,5));
 
         env.execute("Socket Window WordCount");
     }
