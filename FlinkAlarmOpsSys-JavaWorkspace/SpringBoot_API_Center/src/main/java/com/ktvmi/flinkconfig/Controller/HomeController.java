@@ -21,7 +21,6 @@ public Greeting greeting(@RequestParam(value = "name",defaultValue = "World") St
 }
 @PostMapping("/alarm")
 public void getalarm(@RequestBody AlarmRule body){
-
     System.out.println(JSON.toJSONString(body));
 }
 }

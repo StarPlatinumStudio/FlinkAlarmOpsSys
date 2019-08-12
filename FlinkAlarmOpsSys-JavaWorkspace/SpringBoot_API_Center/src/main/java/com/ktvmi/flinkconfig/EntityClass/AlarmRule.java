@@ -1,17 +1,32 @@
 package com.ktvmi.flinkconfig.EntityClass;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class AlarmRule {
-    public AlarmRule(){}
-    public AlarmRule(int jobid, String name, int timewindow, long counts){
+    public AlarmRule(){
+
+    }
+    public AlarmRule(int jobid, String rulecontent, int timewindow, long counts,int ruleid){
         this.counts=counts;
         this.jobid=jobid;
-        this.name=name;
+        this.rulecontent=rulecontent;
         this.timewindow=timewindow;
+        this.ruleid=ruleid;
     }
     private int jobid;
-    private String name;
+    private String rulecontent;
     private int timewindow;
     private long counts;
+    private int ruleid;
+
+    public void setRuleid(int ruleid) {
+        this.ruleid = ruleid;
+    }
+
+    public int getRuleid() {
+        return ruleid;
+    }
 
     public long getCounts() {
         return counts;
@@ -25,8 +40,8 @@ public class AlarmRule {
         return timewindow;
     }
 
-    public String getName() {
-        return name;
+    public String getRulecontent() {
+        return rulecontent;
     }
 
     public void setCounts(long counts) {
@@ -37,8 +52,8 @@ public class AlarmRule {
         this.jobid = jobid;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setRulecontent(String rulecontent) {
+        this.rulecontent = rulecontent;
     }
 
     public void setTimewindow(int timewindow) {
