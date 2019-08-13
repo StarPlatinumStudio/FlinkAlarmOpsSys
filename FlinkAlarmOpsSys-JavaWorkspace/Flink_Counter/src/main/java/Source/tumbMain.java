@@ -31,7 +31,7 @@ public class tumbMain {
         final StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
 
         // get input data by connecting to the socket
-        DataStream<String> text = env.addSource(new SourceFromSocketClient(9000));
+        DataStream<String> text = env.addSource(new SourceFromSocketClient(9001));
 
         // parse the data, group it, window it, and aggregate the counts
         DataStream<WordWithCount> windowCounts = text

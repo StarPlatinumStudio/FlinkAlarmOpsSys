@@ -1,6 +1,9 @@
 package com.ktvmi.flinkconfig;
 
+import com.alibaba.nacos.api.exception.NacosException;
+import com.ktvmi.flinkconfig.Common.AlarmHelper;
 import com.ktvmi.flinkconfig.EntityClass.Config;
+import com.ktvmi.flinkconfig.EntityClass.Count;
 import com.ktvmi.flinkconfig.EntityClass.Job;
 import com.ktvmi.flinkconfig.EntityClass.Rule;
 import org.junit.Assert;
@@ -33,6 +36,7 @@ public class FlinkconfigApplicationTests {
     @Test
     public void contextLoads() {
     }
+
 
     @Test
     public void testGetAllJobs(){
@@ -90,5 +94,12 @@ public class FlinkconfigApplicationTests {
         Config config = restTemplate.getForObject(getRootUrl() + "/config/1001", Config.class);
         System.out.println(config.getHostname());
         Assert.assertNotNull(config);
+    }
+    @Test
+    public void testGetCount()throws NacosException {
+        AlarmHelper alarmHelper=new AlarmHelper();
+        Count count=new Count(1001,"Test",100,1);
+        alarmHelper.getCount(count);
+
     }
 }

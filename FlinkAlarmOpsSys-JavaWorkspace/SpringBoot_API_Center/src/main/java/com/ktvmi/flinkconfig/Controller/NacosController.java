@@ -13,6 +13,7 @@ import com.alibaba.nacos.api.naming.pojo.Instance;
 import java.util.List;
 import java.util.Properties;
 
+import com.ktvmi.flinkconfig.Common.AlarmHelper;
 import com.ktvmi.flinkconfig.EntityClass.*;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.couchbase.CouchbaseProperties;
@@ -27,6 +28,7 @@ import static com.alibaba.nacos.api.common.Constants.DEFAULT_GROUP;
 @RequestMapping({"/nacosconfig"})
 public class NacosController {
     private  String config="";
+   private AlarmHelper alarmHelper=new AlarmHelper();
     /**
      * 获取配置信息
      */
@@ -43,15 +45,44 @@ public class NacosController {
         NamingService naming = NamingFactory.createNamingService(System.getProperty("serveAddr"));
         return content;
     }
-
+    @PostMapping("/publishalarm")
+    public ResponseMsg publishAlarmRule(@Valid @RequestBody AlarmRule alarmRule){
+        return alarmHelper.publish(alarmRule);
+    }
+    @PostMapping("/deletealarm")
+    public ResponseMsg removeAlarm(@Valid @RequestBody AlarmRule alarmRule){
+        return alarmHelper.remove(alarmRule);
+    }
+    @PostMapping("/updatealarm")
+    public ResponseMsg updateAlarmRule(@Valid @RequestBody AlarmRuleMap alarmRuleMap){
+        return alarmHelper.update(alarmRuleMap);
+    }
     /**
+    @PostMapping("/updatealarmrule")
+    public ResponseMsg updateAlarmRule(@Valid @RequestBody AlarmRuleMap alarmRuleMap)throws NacosException{
+        try {
+            String oldAlarmId="FlinkJob."+alarmRuleMap.getJobid()+"."+alarmRuleMap.getOldruleid();
+            String config=configService.getConfig(oldAlarmId,"AlarmRules",3000);//获取时间窗口和计数值
+            AlarmRule alarmRule=JSON.parseObject(config,AlarmRule.class);//实例化旧数据
+            alarmRule.setRuleid(alarmRuleMap.getNewruleid());//新数据覆盖
+            alarmRule.setRulecontent(alarmRuleMap.getRulecontent());
+            configService.publishConfig("FlinkJob."+alarmRule.getJobid()+"."+alarmRule.getRuleid(),"AlarmRules", JSON.toJSONString(alarmRule));//新发布
+            configService.removeConfig(oldAlarmId,"AlarmRules");//旧的删除
+        }
+        catch (NacosException ex){
+            ResponseMsg badmsg = new ResponseMsg("Catch Exception"+ex.getMessage(), 233);
+            return badmsg;
+        }
+        ResponseMsg goodmsg = new ResponseMsg("Delete Success", 0);
+        return goodmsg;
+    }
+
      * 发布配置:创建和修改配置时使用的同一个发布接口，当配置不存在时会创建配置，当配置已存在时会更新配置。
-     * @param alarmRule 报警规则类
      * @return ResponseMsg 统一返回信息
      * @throws NacosException
-     */
+
     @PostMapping("/publichalarm")
-    public ResponseMsg publishAlarm(@Valid @RequestBody AlarmRule alarmRule)throws NacosException{
+    public ResponseMsg publishAlarm(@Valid @RequestBody AlarmRule alarmRule){
         try {
             configService.publishConfig("FlinkJob."+alarmRule.getJobid()+"."+alarmRule.getRuleid(),"AlarmRules", JSON.toJSONString(alarmRule));
         }
@@ -74,30 +105,13 @@ public class NacosController {
         }
         ResponseMsg goodmsg = new ResponseMsg("Delete Success", 0);
         return goodmsg;
-    }
+    }*/
     @RequestMapping(value = {"config/get"},method = {RequestMethod.GET})
     @ResponseBody
     public boolean get() {
         return this.useLocalCache;
     }
-@PostMapping("/updatealarmrule")
-public ResponseMsg updateAlarmRule(@Valid @RequestBody AlarmRuleMap alarmRuleMap)throws NacosException{
-        try {
-            String oldAlarmId="FlinkJob."+alarmRuleMap.getJobid()+"."+alarmRuleMap.getOldruleid();
-            String config=configService.getConfig(oldAlarmId,"AlarmRules",3000);//获取时间窗口和计数值
-            AlarmRule alarmRule=JSON.parseObject(config,AlarmRule.class);//实例化旧数据
-            alarmRule.setRuleid(alarmRuleMap.getNewruleid());//新数据覆盖
-            alarmRule.setRulecontent(alarmRuleMap.getRulecontent());
-            configService.publishConfig("FlinkJob."+alarmRule.getJobid()+"."+alarmRule.getRuleid(),"AlarmRules", JSON.toJSONString(alarmRule));//新发布
-            configService.removeConfig(oldAlarmId,"AlarmRules");//旧的删除
-        }
-        catch (NacosException ex){
-            ResponseMsg badmsg = new ResponseMsg("Catch Exception"+ex.getMessage(), 233);
-            return badmsg;
-        }
-    ResponseMsg goodmsg = new ResponseMsg("Delete Success", 0);
-    return goodmsg;
-}
+
 
 
     @RequestMapping(value = {"config/publish"},method = {RequestMethod.GET})

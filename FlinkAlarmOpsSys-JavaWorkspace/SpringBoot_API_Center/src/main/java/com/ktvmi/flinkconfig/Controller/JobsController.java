@@ -63,26 +63,26 @@ public class JobsController {
         job.setRules(jobDetails.getRules());
         final Job updatedJob = jobRepository.save(job);
         //生成并且更新配置到Nacos
-        List<Rule> rules = ruleRepository.findAll();
-        List<String> keys = new ArrayList<>();
-        String[] rulesArray = job.getRules().split(",");//["1","2","3"]
-        for (Rule rule : rules) {
-            for (int i = 0; i < rulesArray.length; i++)
-                if (Integer.parseInt(rulesArray[i]) == (rule.getRuleid())) {
-                    keys.add(rule.getContent());
-                    break;
-                }
-        }
-        Config config = new Config();
-        config.setId(updatedJob.getJobId());
-        config.setKeys(keys);
-        config.setHostname(updatedJob.getHostname());
-        config.setIsZip(updatedJob.getIsZip());
-        config.setName(updatedJob.getJobName());
-        config.setPort(updatedJob.getPort());
-        ObjectMapper objectMapper = new ObjectMapper();
-        String content = objectMapper.writeValueAsString(config);
-        configService.publishConfig("FlinkJob." + updatedJob.getJobId() + ".properties", "BaseService", content);
+//        List<Rule> rules = ruleRepository.findAll();
+//        List<String> keys = new ArrayList<>();
+//        String[] rulesArray = job.getRules().split(",");//["1","2","3"]
+//        for (Rule rule : rules) {
+//            for (int i = 0; i < rulesArray.length; i++)
+//                if (Integer.parseInt(rulesArray[i]) == (rule.getRuleid())) {
+//                    keys.add(rule.getContent());
+//                    break;
+//                }
+//        }
+//        Config config = new Config();
+//        config.setId(updatedJob.getJobId());
+//        config.setKeys(keys);
+//        config.setHostname(updatedJob.getHostname());
+//        config.setIsZip(updatedJob.getIsZip());
+//        config.setName(updatedJob.getJobName());
+//        config.setPort(updatedJob.getPort());
+//        ObjectMapper objectMapper = new ObjectMapper();
+//        String content = objectMapper.writeValueAsString(config);
+//        configService.publishConfig("FlinkJob." + updatedJob.getJobId() + ".properties", "BaseService", content);
         ResponseMsg goodmsg = new ResponseMsg("Success", 0);
         return goodmsg;
     }

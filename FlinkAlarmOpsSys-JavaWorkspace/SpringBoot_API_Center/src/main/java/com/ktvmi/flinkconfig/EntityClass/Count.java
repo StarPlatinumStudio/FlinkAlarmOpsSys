@@ -2,6 +2,12 @@ package com.ktvmi.flinkconfig.EntityClass;
 
 public class Count {
     public Count(){}
+    public Count(int jobId,String content,int counts,int flinkTime){
+        this.jobId=jobId;
+        this.content=content;
+        this.counts=counts;
+        this.flinkTime=flinkTime;
+    }
     private int jobId;
     private String content;
     private int counts;

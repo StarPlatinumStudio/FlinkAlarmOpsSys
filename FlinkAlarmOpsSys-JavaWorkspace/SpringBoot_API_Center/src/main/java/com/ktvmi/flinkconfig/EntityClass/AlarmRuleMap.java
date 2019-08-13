@@ -2,14 +2,14 @@ package com.ktvmi.flinkconfig.EntityClass;
 //接收新旧RuleID，NacosController/updateAlarmRule()专用实体类
 public class AlarmRuleMap {
     private int jobid;
-    private int oldruleid;
+    private String oldrule;
     private int newruleid;
     private String rulecontent;
     public AlarmRuleMap(){}
-    public AlarmRuleMap(int jobid,int oldruleid,int newruleid,String rulecontent){
+    public AlarmRuleMap(int jobid,String oldrule,int newruleid,String rulecontent){
         this.jobid=jobid;
         this.newruleid=newruleid;
-        this.oldruleid=oldruleid;
+        this.oldrule=oldrule;
         this.rulecontent=rulecontent;
     }
 
@@ -25,9 +25,6 @@ public class AlarmRuleMap {
         return newruleid;
     }
 
-    public int getOldruleid() {
-        return oldruleid;
-    }
 
     public String getRulecontent() {
         return rulecontent;
@@ -37,11 +34,16 @@ public class AlarmRuleMap {
         this.newruleid = newruleid;
     }
 
-    public void setOldruleid(int oldruleid) {
-        this.oldruleid = oldruleid;
-    }
 
     public void setRulecontent(String rulecontent) {
         this.rulecontent = rulecontent;
+    }
+
+    public String getOldrule() {
+        return oldrule;
+    }
+
+    public void setOldrule(String oldrule) {
+        this.oldrule = oldrule;
     }
 }
