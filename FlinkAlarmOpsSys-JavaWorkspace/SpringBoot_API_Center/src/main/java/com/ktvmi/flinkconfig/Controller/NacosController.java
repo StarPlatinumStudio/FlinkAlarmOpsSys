@@ -57,6 +57,11 @@ public class NacosController {
     public ResponseMsg updateAlarmRule(@Valid @RequestBody AlarmRuleMap alarmRuleMap){
         return alarmHelper.update(alarmRuleMap);
     }
+    @PostMapping("/alarm")
+    public void getalarm(@RequestBody Count count){
+        System.out.println(JSON.toJSONString(count));
+        alarmHelper.getCount(count);
+    }
     /**
     @PostMapping("/updatealarmrule")
     public ResponseMsg updateAlarmRule(@Valid @RequestBody AlarmRuleMap alarmRuleMap)throws NacosException{

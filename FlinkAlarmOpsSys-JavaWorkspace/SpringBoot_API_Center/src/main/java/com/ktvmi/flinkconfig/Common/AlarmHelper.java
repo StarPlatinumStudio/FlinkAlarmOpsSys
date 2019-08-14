@@ -1,6 +1,7 @@
 package com.ktvmi.flinkconfig.Common;
 
 import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 import com.alibaba.nacos.api.NacosFactory;
 import com.alibaba.nacos.api.PropertyKeyConst;
 import com.alibaba.nacos.api.annotation.NacosInjected;
@@ -10,6 +11,7 @@ import com.ktvmi.flinkconfig.EntityClass.*;
 import com.ktvmi.flinkconfig.Repository.JobRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import javax.persistence.criteria.CriteriaBuilder;
 import java.util.*;
 
 public class AlarmHelper {
@@ -32,7 +34,20 @@ public class AlarmHelper {
             String dataId = "Flink.AlarmRuleHashMap";
             String group = "BaseService";
             String content = configService.getConfig(dataId, group, 5000);
-            alarmRuleHashMap=JSON.parseObject(content,alarmRuleHashMap.getClass());
+            alarmRuleHashMap=JSONObject.parseObject(content,alarmRuleHashMap.getClass());
+//            JSONObject  jsonObject = JSONObject.parseObject(content);
+//            Map<String,Object> map = (Map<String,Object>)jsonObject;
+//            for (int i = 0; i < jsonObject.size(); i++) {
+//              AlarmRule alarmRule=new AlarmRule();
+//                Object[] obj = (Object[])jsonObject.get(i);
+//                alarmRule.setJobid(Integer.parseInt(obj[0].toString()));
+//                alarmRule.setCounts(Integer.parseInt(obj[1].toString()));
+//                alarmRule.setTimewindow(Integer.parseInt(obj[2].toString()));
+//                alarmRule.setRulecontent(obj[3].toString());
+//                alarmRule.setRuleid(Integer.parseInt(obj[4].toString()));
+//                alarmRuleHashMap.put(alarmRule.getJobid()+alarmRule.getRulecontent(),alarmRule);
+//            }
+
         }
    catch (NacosException e){
             e.printStackTrace();
@@ -53,22 +68,29 @@ public class AlarmHelper {
         CountsQueue queue=countsQueueHashMap.get(key);
         queue.addTime();
         if (count.getFlinkTime()!=springTime){
-            while (springTime<=count.getFlinkTime()){
+            while (springTime<count.getFlinkTime()){
                 for (String k:countsQueueHashMap.keySet())//String key:countsQueueHashMap.keySet()
                 {
                     CountsQueue countsQueue=countsQueueHashMap.get(key);
                     if (countsQueue.getQueueTime()<springTime){
                         countsQueue.addTime();
-                        countsQueue.pushCount(0);
+                        countsQueue.add(0);
                         countsQueueHashMap.put(k,countsQueue);
                     }
                 }
                 springTime++;
             }
         }
-        queue.pushCount(count.getCounts());//计入值
+        queue.add(count.getCounts());//计入值
         countsQueueHashMap.put(key,queue);
-        queue.isAlarm();
+        AlarmRule alarmRule=JSONObject.parseObject(JSON.toJSONString(alarmRuleHashMap.get(key)),AlarmRule.class);
+        int timeWindow=alarmRule.getTimewindow();
+        int ruleCounts=alarmRule.getCounts();
+        if(queue.isAlarm(timeWindow,ruleCounts)) {
+            System.out.println("“警告、”==“警告、”==“警告、”==“警告、”==“警告、”==“警告、”==“警告、”==“警告、”==“警告、”==");
+            System.out.println("“警告:======已到达阀值“" + JSON.toJSONString(alarmRuleHashMap));
+            System.out.println("“警告、”==“警告、”==“警告、”==“警告、”==“警告、”==“警告、”==“警告、”==“警告、”==“警告、”==");
+        }
     }
     private ResponseMsg configPublich(HashMap<String,AlarmRule> alarmRuleHashMap){
         String maptoStr=JSON.toJSONString(alarmRuleHashMap);

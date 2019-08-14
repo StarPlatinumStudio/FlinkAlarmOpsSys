@@ -9,7 +9,7 @@ public class KeywordHelper {
             Pattern pattern = Pattern.compile(keywords.get(i));//过滤关键字
             Matcher matcher = pattern.matcher(input);
             if(matcher.find())
-                return matcher.toString();
+                return matcher.group();
         }
         return null;
     }

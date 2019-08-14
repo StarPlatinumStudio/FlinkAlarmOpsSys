@@ -3,16 +3,16 @@ package Entity;
 public class WordWithCount {
 
     private String word;
-    private long count;
+    private int count;
 
     public WordWithCount() {}
 
-    public WordWithCount(String word, long count) {
+    public WordWithCount(String word, int count) {
         this.word = word;
         this.count = count;
     }
 
-    public long getCount() {
+    public int getCount() {
         return count;
     }
 
@@ -20,7 +20,7 @@ public class WordWithCount {
         return word;
     }
 
-    public void setCount(long count) {
+    public void setCount(int count) {
         this.count = count;
     }
 

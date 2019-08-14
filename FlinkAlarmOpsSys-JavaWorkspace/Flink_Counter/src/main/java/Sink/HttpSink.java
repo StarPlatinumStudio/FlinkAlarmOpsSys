@@ -1,7 +1,6 @@
 package Sink;
 
-import Entity.AlarmRule;
-import Entity.WordWithCount;
+import Entity.*;
 import Source.tumbMain;
 import com.alibaba.fastjson.JSON;
 import org.apache.flink.configuration.Configuration;
@@ -16,10 +15,14 @@ import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class HttpSink extends RichSinkFunction<WordWithCount> {
     private int jobid;
     private int timewindow;
+    private int flinktime=0;
     public HttpSink(int jobid,int timewindow){
 this.jobid=jobid;
 this.timewindow=timewindow;
@@ -27,6 +30,17 @@ this.timewindow=timewindow;
     @Override
     public void open(Configuration parameters) throws Exception {
         super.open(parameters);
+
+        TimerTask myTask=new TimerTask()
+        {
+            @Override
+            public void run()
+            {
+              flinktime++;
+            }
+        };
+        Timer timer = new Timer();
+        timer.schedule(myTask,5000);
     }
 
     @Override
@@ -36,14 +50,14 @@ this.timewindow=timewindow;
 
     @Override
     public void invoke(WordWithCount value, Context context) throws Exception {
-        AlarmRule alarmRule=new AlarmRule(jobid,value.getWord(),timewindow,value.getCount());
-
+        Count count=new Count(1001,value.getWord(),value.getCount(),flinktime);
         CloseableHttpClient httpclient = HttpClients.createDefault();
-            HttpPost httpPost = new HttpPost("http://192.168.1.137:8080/alarm");
+            HttpPost httpPost = new HttpPost("http://127.0.0.1:8080/nacosconfig/alarm");
             httpPost.addHeader("Content-Type", "application/json");
-            httpPost.setEntity(new StringEntity(JSON.toJSONString(alarmRule)));
+            httpPost.setEntity(new StringEntity(JSON.toJSONString(count)));
             CloseableHttpResponse response=httpclient.execute(httpPost);
             response.close();
             httpclient.close();
+            System.out.println(JSON.toJSONString(count));
     }
 }

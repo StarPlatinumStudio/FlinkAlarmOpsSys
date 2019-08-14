@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e7d733b-03dc-4f05-99e3-4f81323761c2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Entity/Count.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Entity/WordWithCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Entity/WordWithCount.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Source/tumbMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Source/tumbMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Source/tumbMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Source/tumbMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flink_Filter/target/classes/alpha/basicFJ/model/HelperClass/HttpHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Flink_Filter/target/classes/alpha/basicFJ/model/HelperClass/HttpHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flink_Filter/target/classes/alpha/basicFJ/model/HelperClass/KeywordHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Flink_Filter/target/classes/alpha/basicFJ/model/HelperClass/KeywordHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flink_Filter/target/classes/alpha/basicFJ/model/Source/SourceFromSocket.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Flink_Filter/target/classes/alpha/basicFJ/model/Source/SourceFromSocket.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Source/tumbMain$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Source/tumbMain$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Source/tumbMain$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Source/tumbMain$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/java/com/ktvmi/flinkconfig/Controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/java/com/ktvmi/flinkconfig/Controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/java/com/ktvmi/flinkconfig/Controller/NacosController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/java/com/ktvmi/flinkconfig/Controller/NacosController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/java/com/ktvmi/flinkconfig/EntityClass/AlarmRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/java/com/ktvmi/flinkconfig/EntityClass/AlarmRule.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -22,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Source/tumbMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="33" column="79" selection-start-line="33" selection-start-column="79" selection-end-line="33" selection-end-column="79" />
+            <state relative-caret-position="162">
+              <caret line="36" column="53" lean-forward="true" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -34,7 +37,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/SocketWindowCount.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
+            <state relative-caret-position="81">
               <caret line="43" column="7" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -45,10 +48,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Entity/Count.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-135">
+              <caret line="4" column="63" selection-start-line="4" selection-start-column="63" selection-end-line="4" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Entity/WordWithCount.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+            <state relative-caret-position="378">
+              <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
               <folding>
                 <element signature="e#268#269#0" expanded="true" />
                 <element signature="e#296#297#0" expanded="true" />
@@ -68,10 +80,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Sink/HttpSink.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="756">
-              <caret line="43" column="75" selection-start-line="43" selection-start-column="75" selection-end-line="43" selection-end-column="75" />
+            <state relative-caret-position="265">
+              <caret line="54" column="62" selection-start-line="54" selection-start-column="62" selection-end-line="54" selection-end-column="62" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1093#1226#0" expanded="true" />
+                <element signature="e#1225#1226#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -89,7 +103,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Source/Custom/SourceFromSocketClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
+            <state relative-caret-position="-216">
               <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -141,10 +155,11 @@
         <option value="$PROJECT_DIR$/src/main/java/main.java" />
         <option value="$PROJECT_DIR$/src/main/java/Source/main.java" />
         <option value="$PROJECT_DIR$/src/main/java/SocketWindowCount.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Entity/WordWithCount.java" />
         <option value="$PROJECT_DIR$/src/main/java/Entity/AlarmRule.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Sink/HttpSink.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Entity/Count.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Entity/WordWithCount.java" />
         <option value="$PROJECT_DIR$/src/main/java/Source/tumbMain.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Sink/HttpSink.java" />
       </list>
     </option>
   </component>
@@ -162,9 +177,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="646" />
-    <option name="y" value="39" />
-    <option name="width" value="1226" />
+    <option name="x" value="91" />
+    <option name="width" value="1840" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -173,7 +187,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -227,13 +241,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565258515868" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565787782290" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Flink_Filter/lib/httpcomponents-client-4.5.6/lib/jna-platform-4.4.0.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -246,6 +260,9 @@
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Entity" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -327,17 +344,17 @@
       <workItem from="1565167328297" duration="4969000" />
       <workItem from="1565227151055" duration="4557000" />
       <workItem from="1565606653696" duration="871000" />
+      <workItem from="1565747215648" duration="3733000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44642000" />
+    <option name="totallyTimeSpent" value="48375000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13432837" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13539445" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -355,8 +372,8 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32925472" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5245203" side_tool="true" visible="true" weight="0.32739422" />
-      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.47547975" weight="0.32850778" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5250533" side_tool="true" visible="true" weight="0.32739422" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.4749467" weight="0.32850778" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -483,31 +500,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Source/tumbMain.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Entity/AlarmRule.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="33" column="79" selection-start-line="33" selection-start-column="79" selection-end-line="33" selection-end-column="79" />
+        <state relative-caret-position="108">
+          <caret line="4" column="62" selection-start-line="4" selection-start-column="62" selection-end-line="4" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Source/Custom/SourceFromSocketClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-216">
+          <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#open#0;class#SourceFromSocketClient#0" />
+            <element signature="method#close#0;class#SourceFromSocketClient#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SocketWindowCount.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Source/Custom/SourceFromSocket.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="43" column="7" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
+        <state relative-caret-position="108">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#main#0;class#SocketWindowCount#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Entity/WordWithCount.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+        <state relative-caret-position="378">
+          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
           <folding>
             <element signature="e#268#269#0" expanded="true" />
             <element signature="e#296#297#0" expanded="true" />
@@ -525,37 +550,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Sink/HttpSink.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="43" column="75" selection-start-line="43" selection-start-column="75" selection-end-line="43" selection-end-column="75" />
+        <state relative-caret-position="265">
+          <caret line="54" column="62" selection-start-line="54" selection-start-column="62" selection-end-line="54" selection-end-column="62" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1093#1226#0" expanded="true" />
+            <element signature="e#1225#1226#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Entity/AlarmRule.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Entity/Count.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="62" selection-start-line="4" selection-start-column="62" selection-end-line="4" selection-end-column="62" />
+        <state relative-caret-position="-135">
+          <caret line="4" column="63" selection-start-line="4" selection-start-column="63" selection-end-line="4" selection-end-column="63" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Source/Custom/SourceFromSocketClient.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/SocketWindowCount.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+        <state relative-caret-position="81">
+          <caret line="43" column="7" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#open#0;class#SourceFromSocketClient#0" />
-            <element signature="method#close#0;class#SourceFromSocketClient#0" />
+            <element signature="method#main#0;class#SocketWindowCount#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Source/Custom/SourceFromSocket.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Source/tumbMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="162">
+          <caret line="36" column="53" lean-forward="true" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

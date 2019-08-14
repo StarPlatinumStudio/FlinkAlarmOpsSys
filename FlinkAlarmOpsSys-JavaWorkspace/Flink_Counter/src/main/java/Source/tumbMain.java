@@ -40,7 +40,7 @@ public class tumbMain {
                     @Override
                     public void flatMap(String value, Collector<WordWithCount> out) {
                         for (String word : value.split("\\s")) {
-                            out.collect(new WordWithCount(word, 1L));
+                            out.collect(new WordWithCount(word, 1));
                         }
                     }
                 })

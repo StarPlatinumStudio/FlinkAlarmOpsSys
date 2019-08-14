@@ -19,8 +19,5 @@ public Greeting greeting(@RequestParam(value = "name",defaultValue = "World") St
     return new Greeting(counter.incrementAndGet(),
             String.format(template,name));
 }
-@PostMapping("/alarm")
-public void getalarm(@RequestBody AlarmRule body){
-    System.out.println(JSON.toJSONString(body));
-}
+
 }

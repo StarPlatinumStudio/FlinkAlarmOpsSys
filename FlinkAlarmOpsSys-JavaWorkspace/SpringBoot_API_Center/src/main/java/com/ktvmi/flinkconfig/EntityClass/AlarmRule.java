@@ -7,7 +7,7 @@ public class AlarmRule {
     public AlarmRule(){
 
     }
-    public AlarmRule(int jobid, String rulecontent, int timewindow, long counts,int ruleid){
+    public AlarmRule(int jobid, String rulecontent, int timewindow, int counts,int ruleid){
         this.counts=counts;
         this.jobid=jobid;
         this.rulecontent=rulecontent;
@@ -17,7 +17,7 @@ public class AlarmRule {
     private int jobid;
     private String rulecontent;
     private int timewindow;
-    private long counts;
+    private int counts;
     private int ruleid;
 
     public void setRuleid(int ruleid) {
@@ -28,7 +28,7 @@ public class AlarmRule {
         return ruleid;
     }
 
-    public long getCounts() {
+    public int getCounts() {
         return counts;
     }
 
@@ -44,7 +44,7 @@ public class AlarmRule {
         return rulecontent;
     }
 
-    public void setCounts(long counts) {
+    public void setCounts(int counts) {
         this.counts = counts;
     }
 
