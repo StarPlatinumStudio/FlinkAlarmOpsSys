@@ -16,13 +16,14 @@ import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Timer;
 import java.util.TimerTask;
 
 public class HttpSink extends RichSinkFunction<WordWithCount> {
     private int jobid;
     private int timewindow;
-    private int flinktime=0;
+   private Date starDate;
     public HttpSink(int jobid,int timewindow){
 this.jobid=jobid;
 this.timewindow=timewindow;
@@ -31,16 +32,8 @@ this.timewindow=timewindow;
     public void open(Configuration parameters) throws Exception {
         super.open(parameters);
 
-        TimerTask myTask=new TimerTask()
-        {
-            @Override
-            public void run()
-            {
-              flinktime++;
-            }
-        };
-        Timer timer = new Timer();
-        timer.schedule(myTask,5000);
+        starDate = new Date();
+
     }
 
     @Override
@@ -50,7 +43,10 @@ this.timewindow=timewindow;
 
     @Override
     public void invoke(WordWithCount value, Context context) throws Exception {
-        Count count=new Count(1001,value.getWord(),value.getCount(),flinktime);
+        Date nowDate = new Date();
+        long interval = (nowDate.getTime() - starDate.getTime())/5000;//秒数
+
+        Count count=new Count(1001,value.getWord(),value.getCount(),(int)interval);
         CloseableHttpClient httpclient = HttpClients.createDefault();
             HttpPost httpPost = new HttpPost("http://127.0.0.1:8080/nacosconfig/alarm");
             httpPost.addHeader("Content-Type", "application/json");

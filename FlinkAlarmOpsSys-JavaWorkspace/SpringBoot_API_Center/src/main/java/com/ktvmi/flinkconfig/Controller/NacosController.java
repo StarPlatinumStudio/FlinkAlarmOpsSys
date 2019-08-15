@@ -1,7 +1,6 @@
 package com.ktvmi.flinkconfig.Controller;
 
 import com.alibaba.fastjson.JSON;
-import com.alibaba.nacos.api.NacosFactory;
 import com.alibaba.nacos.api.annotation.NacosInjected;
 import com.alibaba.nacos.api.config.ConfigService;
 import com.alibaba.nacos.api.config.annotation.NacosConfigListener;
@@ -11,34 +10,21 @@ import com.alibaba.nacos.api.naming.NamingFactory;
 import com.alibaba.nacos.api.naming.NamingService;
 import com.alibaba.nacos.api.naming.pojo.Instance;
 import java.util.List;
-import java.util.Properties;
-
 import com.ktvmi.flinkconfig.Common.AlarmHelper;
 import com.ktvmi.flinkconfig.EntityClass.*;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.autoconfigure.couchbase.CouchbaseProperties;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
-
-import static com.alibaba.nacos.api.common.Constants.DEFAULT_GROUP;
-
 @RestController
 @RequestMapping({"/nacosconfig"})
 public class NacosController {
-    private  String config="";
+
    private AlarmHelper alarmHelper=new AlarmHelper();
-    /**
-     * 获取配置信息
-     */
-    @NacosValue(value = "${useLocalCache:false}",autoRefreshed = true)
-    private boolean useLocalCache;//运行时可被动态更新了。
 
     @NacosInjected
     private ConfigService configService;//注册默认服务
 
-    @Deprecated//待改进
+    @Deprecated//暂不需要查询
     @GetMapping("/getalarm")
     public String getalarm(String id)throws NacosException{
         String content = configService.getConfig("FlinkJob."+id+".properties.alarm", "BaseService", 5000);
@@ -62,6 +48,14 @@ public class NacosController {
         System.out.println(JSON.toJSONString(count));
         alarmHelper.getCount(count);
     }
+    //以下：弃用、测试方法
+
+    /**
+     * 获取配置信息
+     */
+    @Deprecated
+    @NacosValue(value = "${useLocalCache:false}",autoRefreshed = true)
+    private boolean useLocalCache;//运行时可被动态更新了。
     /**
     @PostMapping("/updatealarmrule")
     public ResponseMsg updateAlarmRule(@Valid @RequestBody AlarmRuleMap alarmRuleMap)throws NacosException{
@@ -127,7 +121,7 @@ public class NacosController {
     }
 
 
-
+    private  String config="";
     @NacosConfigListener(dataId = "example2")
     public void onMessage(String config){
 

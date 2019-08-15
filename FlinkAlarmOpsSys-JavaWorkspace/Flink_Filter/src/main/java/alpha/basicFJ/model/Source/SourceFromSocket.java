@@ -91,13 +91,13 @@ public class SourceFromSocket extends RichFlatMapFunction<String, String> {
            // log.debug(">>>this.keys.size:" + this.keys.size());
             if (jsonBean.getStatus() == 0) {
                 String mathResult=keywordHelper.match(responseStr, this.keys);
-                if (!mathResult.isEmpty())
+                if (!mathResult.equals(""))
                     stringCollector.collect(mathResult+"\n");
                // else stringCollector.collect("keywords not math:" + responseStr+"\n");
             } else
                 stringCollector.collect("Data Status Error\n");
         } catch (Exception ex) {
-            stringCollector.collect("Wrong input json str,JsonBean.getResponse().equals(null)\n");
+            stringCollector.collect(ex.toString()+"\n");
         }
     }
 }

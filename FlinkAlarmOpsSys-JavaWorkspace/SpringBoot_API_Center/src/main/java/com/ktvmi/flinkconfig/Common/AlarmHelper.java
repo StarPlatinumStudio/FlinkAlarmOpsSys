@@ -35,19 +35,6 @@ public class AlarmHelper {
             String group = "BaseService";
             String content = configService.getConfig(dataId, group, 5000);
             alarmRuleHashMap=JSONObject.parseObject(content,alarmRuleHashMap.getClass());
-//            JSONObject  jsonObject = JSONObject.parseObject(content);
-//            Map<String,Object> map = (Map<String,Object>)jsonObject;
-//            for (int i = 0; i < jsonObject.size(); i++) {
-//              AlarmRule alarmRule=new AlarmRule();
-//                Object[] obj = (Object[])jsonObject.get(i);
-//                alarmRule.setJobid(Integer.parseInt(obj[0].toString()));
-//                alarmRule.setCounts(Integer.parseInt(obj[1].toString()));
-//                alarmRule.setTimewindow(Integer.parseInt(obj[2].toString()));
-//                alarmRule.setRulecontent(obj[3].toString());
-//                alarmRule.setRuleid(Integer.parseInt(obj[4].toString()));
-//                alarmRuleHashMap.put(alarmRule.getJobid()+alarmRule.getRulecontent(),alarmRule);
-//            }
-
         }
    catch (NacosException e){
             e.printStackTrace();
@@ -71,7 +58,7 @@ public class AlarmHelper {
             while (springTime<count.getFlinkTime()){
                 for (String k:countsQueueHashMap.keySet())//String key:countsQueueHashMap.keySet()
                 {
-                    CountsQueue countsQueue=countsQueueHashMap.get(key);
+                    CountsQueue countsQueue=countsQueueHashMap.get(k);
                     if (countsQueue.getQueueTime()<springTime){
                         countsQueue.addTime();
                         countsQueue.add(0);
@@ -87,9 +74,8 @@ public class AlarmHelper {
         int timeWindow=alarmRule.getTimewindow();
         int ruleCounts=alarmRule.getCounts();
         if(queue.isAlarm(timeWindow,ruleCounts)) {
-            System.out.println("“警告、”==“警告、”==“警告、”==“警告、”==“警告、”==“警告、”==“警告、”==“警告、”==“警告、”==");
-            System.out.println("“警告:======已到达阀值“" + JSON.toJSONString(alarmRuleHashMap));
-            System.out.println("“警告、”==“警告、”==“警告、”==“警告、”==“警告、”==“警告、”==“警告、”==“警告、”==“警告、”==");
+            SMSUnits smsUnits=new SMSUnits();
+            System.out.println("警报规则{"+alarmRuleHashMap.get(key).getRulecontent()+"}目前发生频率超过"+timeWindow+"分钟"+ruleCounts+"次，已经达到预警阀值。报警短信已发送至号码为18250156433的手机，请留意。PS:一小时内警报最多发送五次。\n短信编号：："+smsUnits.sendGet("18250156433"));
         }
     }
     private ResponseMsg configPublich(HashMap<String,AlarmRule> alarmRuleHashMap){
@@ -106,17 +92,27 @@ public class AlarmHelper {
         return goodmsg;
     }
     public ResponseMsg publish(AlarmRule alarmRule){
-        alarmRuleHashMap.put(alarmRule.getJobid()+alarmRule.getRulecontent(),alarmRule);
+        String key=alarmRule.getJobid()+alarmRule.getRulecontent();
+        alarmRuleHashMap.put(key,alarmRule);
+        countsQueueHashMap.put(key,new CountsQueue());
        return configPublich(alarmRuleHashMap);
     }
     public ResponseMsg remove(AlarmRule alarmRule){
-        alarmRuleHashMap.remove(alarmRule.getJobid()+alarmRule.getRulecontent());
+        String key=alarmRule.getJobid()+alarmRule.getRulecontent();
+        alarmRuleHashMap.remove(key);
+        countsQueueHashMap.remove(key);
         return configPublich(alarmRuleHashMap);
     }
     public ResponseMsg update(AlarmRuleMap alarmRule){
-        AlarmRule oldRule=alarmRuleHashMap.remove(alarmRule.getJobid()+alarmRule.getOldrule());
+        String oldKey=alarmRule.getJobid()+alarmRule.getOldrule();
+        String newKey=alarmRule.getJobid()+alarmRule.getRulecontent();
+        AlarmRule oldRule=JSONObject.parseObject(JSON.toJSONString(alarmRuleHashMap.remove(oldKey)),AlarmRule.class);//DEBUG:com.alibaba.fastjson.JSONObject cannot be cast to com.ktvmi.flinkconfig.EntityClass.AlarmRule
+
         AlarmRule newRule=new AlarmRule(alarmRule.getJobid(),alarmRule.getRulecontent(),oldRule.getTimewindow(),oldRule.getCounts(),alarmRule.getNewruleid());
-        alarmRuleHashMap.put(alarmRule.getJobid()+alarmRule.getRulecontent(),newRule);
+        alarmRuleHashMap.put(newKey,newRule);
+
+        countsQueueHashMap.remove(oldKey);
+        countsQueueHashMap.put(newKey,new CountsQueue());
         return configPublich(alarmRuleHashMap);
     }
 //    String oldAlarmId="FlinkJob."+alarmRuleMap.getJobid()+"."+alarmRuleMap.getOldruleid();

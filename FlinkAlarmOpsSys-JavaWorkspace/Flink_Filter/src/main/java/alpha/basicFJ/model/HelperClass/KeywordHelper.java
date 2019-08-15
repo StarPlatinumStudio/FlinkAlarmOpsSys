@@ -11,6 +11,6 @@ public class KeywordHelper {
             if(matcher.find())
                 return matcher.group();
         }
-        return null;
+        return "";
     }
 }
