@@ -1,88 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1d5969f1-02eb-4c42-a6c1-271d7537a78d" name="Default Changelist" comment="addFront\readme">
-      <change afterPath="$PROJECT_DIR$/.idea/FlinkAlarmOpsSys-JavaWorkspace.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Docs/UML/Flink集群UML.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Docs/UML/Spring Boot RESTful API Service.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Docs/UML/SpringBoot报警模块UML图.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Docs/UML/流计算运维预警系统.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-Front/Grafana Plugin/components/PARALLAX PIXEL STARS.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-Front/Grafana Plugin/components/config.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-Front/Grafana Plugin/components/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-Front/Grafana Plugin/components/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-Front/Grafana Plugin/components/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-Front/Grafana Plugin/components/keywords.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-Front/Grafana Plugin/components/keywords.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-Front/Grafana Plugin/components/keywords.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-Front/Grafana Plugin/components/logs.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-Front/Grafana Plugin/components/logs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-Front/Grafana Plugin/components/stream.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-Front/Grafana Plugin/components/stream.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-Front/Grafana Plugin/css/dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-Front/Grafana Plugin/css/example-app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-Front/Grafana Plugin/css/light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-Front/Grafana Plugin/dashboards/example_app_dashboard.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-Front/Grafana Plugin/datasource/datasource.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-Front/Grafana Plugin/datasource/module.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-Front/Grafana Plugin/datasource/plugin.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-Front/Grafana Plugin/img/connectfail.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-Front/Grafana Plugin/img/large_logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-Front/Grafana Plugin/img/small_logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-Front/Grafana Plugin/module.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-Front/Grafana Plugin/panel/module.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-Front/Grafana Plugin/panel/plugin.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-Front/Grafana Plugin/plugin.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-Front/Pure Html/src/PARALLAX PIXEL STARS.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-Front/Pure Html/src/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-Front/Pure Html/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-Front/Pure Html/src/keywords.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Counter/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Counter/Flink_Counter.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Counter/dependency-reduced-pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Counter/out/artifacts/Flink_Counter_jar/Flink_Counter.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Counter/out/artifacts/Flink_Counter_jar/Main$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Counter/out/artifacts/Flink_Counter_jar/Main$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Counter/out/artifacts/Flink_Counter_jar/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Counter/target/classes/com/ktvmi/flinkops/counter/entity/AlarmRule.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Counter/target/classes/com/ktvmi/flinkops/counter/entity/Count.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Counter/target/classes/com/ktvmi/flinkops/counter/entity/WordWithCount.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Counter/target/classes/com/ktvmi/flinkops/counter/mainfunc$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Counter/target/classes/com/ktvmi/flinkops/counter/mainfunc$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Counter/target/classes/com/ktvmi/flinkops/counter/mainfunc.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Counter/target/classes/com/ktvmi/flinkops/counter/sink/HttpSink.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Counter/target/classes/com/ktvmi/flinkops/counter/source/SourceFromSocket.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Counter/target/classes/com/ktvmi/flinkops/counter/source/SourceFromSocketClient.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Counter/target/flink.counter-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Counter/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Counter/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Counter/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Counter/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Counter/target/original-flink.counter-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Filter/.idea/artifacts/Filter_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Filter/.idea/dictionaries/PC.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Filter/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Filter/dependency-reduced-pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Filter/out/artifacts/Filter_jar/Flink_Filter.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Filter/out/artifacts/Flink_Filter_jar/Flink_Filter.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Filter/target/flink.filter-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Filter/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Filter/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Filter/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Filter/target/original-flink.filter-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/SpringBoot_API_Center/src/main/resources/application.properties~a7cccd02f10466e9e40db4b0d26b874b0b572cc6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SNAPSHOT/argus.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SNAPSHOT/flink.config-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SNAPSHOT/flink.counter-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SNAPSHOT/flink.filter-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Filter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Filter/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/SpringBoot_API_Center/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/SpringBoot_API_Center/src/main/resources/application.properties" afterDir="false" />
+    <list default="true" id="1d5969f1-02eb-4c42-a6c1-271d7537a78d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/SpringBoot_API_Center/src/main/resources/application.properties" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -96,9 +17,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="747" />
-    <option name="y" value="123" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="610" />
+    <option name="y" value="16" />
     <option name="width" value="1176" />
     <option name="height" value="1047" />
   </component>
@@ -131,6 +52,37 @@
               <item name="FlinkAlarmOpsSys-JavaWorkspace" type="462c0819:PsiDirectoryNode" />
               <item name="SpringBoot_API_Center" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="FlinkAlarmOpsSys-JavaWorkspace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlinkAlarmOpsSys-JavaWorkspace" type="462c0819:PsiDirectoryNode" />
+              <item name="FlinkAlarmOpsSys-JavaWorkspace" type="462c0819:PsiDirectoryNode" />
+              <item name="SpringBoot_API_Center" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlinkAlarmOpsSys-JavaWorkspace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlinkAlarmOpsSys-JavaWorkspace" type="462c0819:PsiDirectoryNode" />
+              <item name="FlinkAlarmOpsSys-JavaWorkspace" type="462c0819:PsiDirectoryNode" />
+              <item name="SpringBoot_API_Center" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlinkAlarmOpsSys-JavaWorkspace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlinkAlarmOpsSys-JavaWorkspace" type="462c0819:PsiDirectoryNode" />
+              <item name="FlinkAlarmOpsSys-JavaWorkspace" type="462c0819:PsiDirectoryNode" />
+              <item name="SpringBoot_API_Center" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlinkAlarmOpsSys-JavaWorkspace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlinkAlarmOpsSys-JavaWorkspace" type="462c0819:PsiDirectoryNode" />
+              <item name="FlinkAlarmOpsSys-JavaWorkspace" type="462c0819:PsiDirectoryNode" />
+              <item name="SpringBoot_API_Center" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -142,7 +94,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566201871295" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566202168445" />
     <property name="last_opened_file_path" value="D:/算法与数据结构/DataStructure" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -181,7 +133,7 @@
       <workItem from="1565831425787" duration="992000" />
       <workItem from="1565857443281" duration="272000" />
       <workItem from="1565941423862" duration="14000" />
-      <workItem from="1566200630796" duration="1121000" />
+      <workItem from="1566200630796" duration="1441000" />
     </task>
     <task id="LOCAL-00001" summary="Original commit">
       <created>1565159209454</created>
@@ -239,16 +191,30 @@
       <option name="project" value="LOCAL" />
       <updated>1566200827998</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="addFront\readme">
+      <created>1566201943808</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1566201943808</updated>
+    </task>
+    <task id="LOCAL-00010" summary="addFront\readme">
+      <created>1566201967311</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1566201967311</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5958000" />
+    <option name="totallyTimeSpent" value="6278000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="610" y="16" width="1176" height="1047" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.35607675" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.5985663" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -266,7 +232,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32925472" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.51865673" side_tool="true" visible="true" weight="0.32962137" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.51865673" side_tool="true" visible="true" weight="0.33295837" />
       <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.48134327" visible="true" weight="0.32962137" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -298,5 +264,11 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Flink_Counter/flinksocketexecution.iml" />
     <entry file="file://$PROJECT_DIR$/Flink_Counter/src/main/java/main.java" />
+    <entry file="file://$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/SpringBoot_API_Center/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/SpringBoot_API_Center/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
   </component>
 </project>
