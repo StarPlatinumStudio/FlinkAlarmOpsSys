@@ -1,45 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1d5969f1-02eb-4c42-a6c1-271d7537a78d" name="Default Changelist" comment="remove my phonenumber">
+    <list default="true" id="1d5969f1-02eb-4c42-a6c1-271d7537a78d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Counter/target/classes/com/ktvmi/flinkops/counter/entity/AlarmRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Counter/target/classes/com/ktvmi/flinkops/counter/entity/Count.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Counter/target/classes/com/ktvmi/flinkops/counter/entity/WordWithCount.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Counter/target/classes/com/ktvmi/flinkops/counter/mainfunc$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Counter/target/classes/com/ktvmi/flinkops/counter/mainfunc$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Counter/target/classes/com/ktvmi/flinkops/counter/mainfunc.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Counter/target/classes/com/ktvmi/flinkops/counter/sink/HttpSink.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Counter/target/classes/com/ktvmi/flinkops/counter/source/SourceFromSocket.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Counter/target/classes/com/ktvmi/flinkops/counter/source/SourceFromSocketClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Counter/target/flink.counter-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Counter/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Counter/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Counter/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Counter/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Counter/target/original-flink.counter-1.0-SNAPSHOT.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Filter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Filter/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Filter/target/flink.filter-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Filter/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Filter/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Filter/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Filter/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Filter/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Filter/target/original-flink.filter-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Filter/target/test-classes/FirstFlink/Config.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Filter/target/test-classes/FirstFlink/FirstFlinkAnalysis$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Filter/target/test-classes/FirstFlink/FirstFlinkAnalysis$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Filter/target/test-classes/FirstFlink/FirstFlinkAnalysis.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Filter/target/test-classes/FirstFlink/HttpHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Filter/target/test-classes/WordCount_Socket/SocketTextStreamWordCount$LineSplitter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Filter/target/test-classes/WordCount_Socket/SocketTextStreamWordCount.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Filter/target/test-classes/WordCount_Socket/WindowWordCount$Splitter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Filter/target/test-classes/WordCount_Socket/WindowWordCount.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Filter/target/test-classes/javase/Autoboxing.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Filter/target/test-classes/javase/Box.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Filter/target/test-classes/javase/Generic$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Filter/target/test-classes/javase/Generic.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/Flink_Filter/target/test-classes/javase/TupleDemo.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -139,29 +103,6 @@
               <item name="FlinkAlarmOpsSys-JavaWorkspace" type="b2602c69:ProjectViewProjectNode" />
               <item name="FlinkAlarmOpsSys-JavaWorkspace" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="FlinkAlarmOpsSys-JavaWorkspace" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FlinkAlarmOpsSys-JavaWorkspace" type="462c0819:PsiDirectoryNode" />
-              <item name="FlinkAlarmOpsSys-JavaWorkspace" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FlinkAlarmOpsSys-JavaWorkspace" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FlinkAlarmOpsSys-JavaWorkspace" type="462c0819:PsiDirectoryNode" />
-              <item name="FlinkAlarmOpsSys-JavaWorkspace" type="462c0819:PsiDirectoryNode" />
-              <item name="Flink_Counter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FlinkAlarmOpsSys-JavaWorkspace" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FlinkAlarmOpsSys-JavaWorkspace" type="462c0819:PsiDirectoryNode" />
-              <item name="FlinkAlarmOpsSys-JavaWorkspace" type="462c0819:PsiDirectoryNode" />
-              <item name="Flink_Filter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FlinkAlarmOpsSys-JavaWorkspace" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FlinkAlarmOpsSys-JavaWorkspace" type="462c0819:PsiDirectoryNode" />
-              <item name="FlinkAlarmOpsSys-JavaWorkspace" type="462c0819:PsiDirectoryNode" />
-              <item name="SpringBoot_API_Center" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -173,7 +114,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566205602409" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566206098480" />
     <property name="last_opened_file_path" value="D:/算法与数据结构/DataStructure" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -217,7 +158,7 @@
       <workItem from="1565831425787" duration="992000" />
       <workItem from="1565857443281" duration="272000" />
       <workItem from="1565941423862" duration="14000" />
-      <workItem from="1566200630796" duration="5102000" />
+      <workItem from="1566200630796" duration="5361000" />
     </task>
     <task id="LOCAL-00001" summary="Original commit">
       <created>1565159209454</created>
@@ -317,11 +258,18 @@
       <option name="project" value="LOCAL" />
       <updated>1566204892303</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="remove target">
+      <created>1566205852475</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1566205852475</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9939000" />
+    <option name="totallyTimeSpent" value="10198000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -373,7 +321,8 @@
     <MESSAGE value="addFront\readme" />
     <MESSAGE value="remove database password" />
     <MESSAGE value="remove my phonenumber" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove my phonenumber" />
+    <MESSAGE value="remove target" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove target" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Flink_Counter/flinksocketexecution.iml" />
