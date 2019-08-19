@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1d5969f1-02eb-4c42-a6c1-271d7537a78d" name="Default Changelist" comment="">
+    <list default="true" id="1d5969f1-02eb-4c42-a6c1-271d7537a78d" name="Default Changelist" comment="addFront\readme">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/SpringBoot_API_Center/src/main/resources/application.properties" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,7 +11,13 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/FlinkAlarmOpsSys-JavaWorkspace/SpringBoot_API_Center/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -39,49 +44,7 @@
             <path>
               <item name="FlinkAlarmOpsSys-JavaWorkspace" type="b2602c69:ProjectViewProjectNode" />
               <item name="FlinkAlarmOpsSys-JavaWorkspace" type="462c0819:PsiDirectoryNode" />
-              <item name="FlinkAlarmOpsSys-Front" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FlinkAlarmOpsSys-JavaWorkspace" type="b2602c69:ProjectViewProjectNode" />
               <item name="FlinkAlarmOpsSys-JavaWorkspace" type="462c0819:PsiDirectoryNode" />
-              <item name="FlinkAlarmOpsSys-JavaWorkspace" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FlinkAlarmOpsSys-JavaWorkspace" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FlinkAlarmOpsSys-JavaWorkspace" type="462c0819:PsiDirectoryNode" />
-              <item name="FlinkAlarmOpsSys-JavaWorkspace" type="462c0819:PsiDirectoryNode" />
-              <item name="SpringBoot_API_Center" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FlinkAlarmOpsSys-JavaWorkspace" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FlinkAlarmOpsSys-JavaWorkspace" type="462c0819:PsiDirectoryNode" />
-              <item name="FlinkAlarmOpsSys-JavaWorkspace" type="462c0819:PsiDirectoryNode" />
-              <item name="SpringBoot_API_Center" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FlinkAlarmOpsSys-JavaWorkspace" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FlinkAlarmOpsSys-JavaWorkspace" type="462c0819:PsiDirectoryNode" />
-              <item name="FlinkAlarmOpsSys-JavaWorkspace" type="462c0819:PsiDirectoryNode" />
-              <item name="SpringBoot_API_Center" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FlinkAlarmOpsSys-JavaWorkspace" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FlinkAlarmOpsSys-JavaWorkspace" type="462c0819:PsiDirectoryNode" />
-              <item name="FlinkAlarmOpsSys-JavaWorkspace" type="462c0819:PsiDirectoryNode" />
-              <item name="SpringBoot_API_Center" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FlinkAlarmOpsSys-JavaWorkspace" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FlinkAlarmOpsSys-JavaWorkspace" type="462c0819:PsiDirectoryNode" />
-              <item name="FlinkAlarmOpsSys-JavaWorkspace" type="462c0819:PsiDirectoryNode" />
-              <item name="SpringBoot_API_Center" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -94,11 +57,16 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566202168445" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566202432884" />
     <property name="last_opened_file_path" value="D:/算法与数据结构/DataStructure" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Flink\FlinkAlarmOpsSys-JavaWorkspace\FlinkAlarmOpsSys-JavaWorkspace\SpringBoot_API_Center\src\main\resources" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -133,7 +101,7 @@
       <workItem from="1565831425787" duration="992000" />
       <workItem from="1565857443281" duration="272000" />
       <workItem from="1565941423862" duration="14000" />
-      <workItem from="1566200630796" duration="1441000" />
+      <workItem from="1566200630796" duration="1697000" />
     </task>
     <task id="LOCAL-00001" summary="Original commit">
       <created>1565159209454</created>
@@ -205,11 +173,18 @@
       <option name="project" value="LOCAL" />
       <updated>1566201967311</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="addFront\readme">
+      <created>1566202276734</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1566202276734</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6278000" />
+    <option name="totallyTimeSpent" value="6534000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="610" y="16" width="1176" height="1047" extended-state="0" />

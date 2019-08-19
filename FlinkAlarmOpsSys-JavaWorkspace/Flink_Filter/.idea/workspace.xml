@@ -8,7 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="272cceaa-ae7f-4b63-9b7f-00a631fa31de" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/resources/application.properties" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -247,11 +246,6 @@
             <path>
               <item name="Flink_Filter" type="b2602c69:ProjectViewProjectNode" />
               <item name="Flink_Filter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Flink_Filter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Flink_Filter" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Flink_Filter" type="b2602c69:ProjectViewProjectNode" />
