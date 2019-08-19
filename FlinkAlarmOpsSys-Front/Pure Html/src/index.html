@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flink Keywords Config Center</title>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/core.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <link href="keywords.css" rel="stylesheet">
+    <link href="PARALLAX PIXEL STARS.css" rel="stylesheet">
+  
+  </head>
+  <body style="padding: 0 20%;">
+    <div class="header">
+        <div class="title">
+           <span>Flink Jobs 配置控制台</span> 
+        </div>
+        <div class="userInfo" style="border: aliceblue;margin-right: 22.5%;">{{ctrl.name}}</div><div class="userInfo">
+            我的信息 
+        </div >
+    </div>
+    <div id='loadingdialog' class='loading dialog' style="z-index: 10;display: block;background-color: rgba(0,0,0,0.8);">
+            <div class='dialoginner'>
+                 <span class='dialogTitle' style="font-size:large; position: relative;top: 50px;left:30%;border: aliceblue"> 
+                    <div id="loadbox" style="position: relative;bottom: 20px;">  <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+                     拼命加载中...</div> 
+                  <div id="connectfailbox" style="display: none"> <img style="height: 64px;margin-right: 10px;" src="public/plugins/grafana-example-app/img/connectfail.png"/>网络错误：连接被拒绝</div>
+                  <div id="operatefailbox" style="display: none"> <img style="height: 64px;margin-right: 10px;" src="public/plugins/grafana-example-app/img/connectfail.png"/>网络错误或数据不存在</div>
+                  <div id="addfailbox" style="display: none"> <img style="height: 64px;margin-right: 10px;" src="public/plugins/grafana-example-app/img/connectfail.png"/>操作失败：输入规则已存在</div>
+                    </span>
+            <div id="dialogbtns" class='dialogbtns'>
+                    <button id="dialogok"  class='gbutton' onclick="location.reload()" style='display: none;background-color: cornflowerblue;width: 100%'>刷新页面</button>
+                    <button id="dialogclose"  class='gbutton' onclick="$('#dialogclose').css('display','block');$('#addfailbox').css('display','none');$('#loadingdialog').css('display','none')" style='display: none;background-color: cornflowerblue;width: 100%'>确定</button>
+                <!--<button id="reinit"  class='gbutton'  style='background-color: cornflowerblue;width: 100%'>重新加载</button>--></div>
+            </div>
+        </div>
+        <div id='stars'></div>
+        <div id='stars2'></div>
+        <div id='stars3'></div>
+    
+    <div class="wait container" >
+        <div class="containerinfo">
+            <div class="containertitle">&puncsp;</div>
+            <div class="jobtype">&puncsp;</div>
+            <table style="width:95%">
+                    <tr>
+                      <th>&puncsp;</th>
+                      <td>&puncsp;</td>
+                    </tr>
+                    <tr>
+                      <th>&puncsp;</th>
+                      <td>&puncsp;</td>
+                    </tr>
+                    <tr>
+                     <th>&puncsp;</th>
+                    <td>&puncsp;</td>
+                    </tr> 
+                    <tr>
+                    <th>&puncsp;</th>
+                    <td>&puncsp;</td>
+                    </tr>
+                  </table>
+        </div>
+        <div class="containerbtns">
+    <button id="showbtn" class="gbutton">&puncsp;</button>
+    <button class="gbutton" type="button">&puncsp;</button>
+    <input class="gbutton" type="button" value=" " />
+    <input class="gbutton" type="button" value=" " />
+        </div>
+    </div>
+    <div class="wait container" >
+            <div class="containerinfo">
+                <div class="containertitle">&puncsp;</div>
+                <div class="jobtype">&puncsp;</div>
+                <table style="width:95%">
+                        <tr>
+                          <th>&puncsp;</th>
+                          <td>&puncsp;</td>
+                        </tr>
+                        <tr>
+                          <th>&puncsp;</th>
+                          <td>&puncsp;</td>
+                        </tr>
+                        <tr>
+                         <th>&puncsp;</th>
+                        <td>&puncsp;</td>
+                        </tr> 
+                        <tr>
+                        <th>&puncsp;</th>
+                        <td>&puncsp;</td>
+                        </tr>
+                      </table>
+            </div>
+            <div class="containerbtns">
+        <button id="showbtn" class="gbutton">&puncsp;</button>
+        <button class="gbutton" type="button">&puncsp;</button>
+        <input class="gbutton" type="button" value=" " />
+        <input class="gbutton" type="button" value=" " />
+            </div>
+        </div>
+        <div class="wait container" >
+                <div class="containerinfo">
+                    <div class="containertitle">&puncsp;</div>
+                    <div class="jobtype">&puncsp;</div>
+                    <table style="width:95%">
+                            <tr>
+                              <th>&puncsp;</th>
+                              <td>&puncsp;</td>
+                            </tr>
+                            <tr>
+                              <th>&puncsp;</th>
+                              <td>&puncsp;</td>
+                            </tr>
+                            <tr>
+                             <th>&puncsp;</th>
+                            <td>&puncsp;</td>
+                            </tr> 
+                            <tr>
+                            <th>&puncsp;</th>
+                            <td>&puncsp;</td>
+                            </tr>
+                          </table>
+                </div>
+                <div class="containerbtns">
+            <button id="showbtn" class="gbutton">&puncsp;</button>
+            <button class="gbutton" type="button">&puncsp;</button>
+            <input class="gbutton" type="button" value=" " />
+            <input class="gbutton" type="button" value=" " />
+                </div>
+            </div>
+    <div id="containers"></div>
+    <script src="index.js"></script>
+ 
+  </body>
+</html>
