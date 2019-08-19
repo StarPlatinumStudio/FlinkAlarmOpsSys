@@ -8,6 +8,8 @@
   <component name="ChangeListManager">
     <list default="true" id="272cceaa-ae7f-4b63-9b7f-00a631fa31de" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SNAPSHOT/flink.config-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../SNAPSHOT/flink.config-1.0-SNAPSHOT.jar" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -476,6 +478,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7502812" visible="true" weight="0.13486141" />
       <window_info id="Structure" order="1" sideWeight="0.24971879" side_tool="true" weight="0.25042883" />
