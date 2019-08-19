@@ -1,18 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Filter:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="272cceaa-ae7f-4b63-9b7f-00a631fa31de" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/java/com/ktvmi/flinkconfig/Common/SMSUnits.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Flink_Counter/src/main/java/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ktvmi/finkops/filter/helper/ZipHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flink_Counter/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Flink_Counter/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flink_Counter/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Flink_Counter/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Flink_Counter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Flink_Counter/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Flink_Counter/src/main/java/Sink/HttpSink.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Flink_Counter/src/main/java/Sink/HttpSink.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flink_Counter/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Flink_Counter/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flink_Counter/src/main/java/Entity/AlarmRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Flink_Counter/src/main/java/com/ktvmi/flinkops/counter/entity/AlarmRule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flink_Counter/src/main/java/Entity/Count.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Flink_Counter/src/main/java/com/ktvmi/flinkops/counter/entity/Count.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flink_Counter/src/main/java/Entity/WordWithCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Flink_Counter/src/main/java/com/ktvmi/flinkops/counter/entity/WordWithCount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flink_Counter/src/main/java/Sink/HttpSink.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Flink_Counter/src/main/java/com/ktvmi/flinkops/counter/sink/HttpSink.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flink_Counter/src/main/java/SocketWindowCount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flink_Counter/src/main/java/Source/Custom/SourceFromSocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Flink_Counter/src/main/java/com/ktvmi/flinkops/counter/source/SourceFromSocket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flink_Counter/src/main/java/Source/Custom/SourceFromSocketClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Flink_Counter/src/main/java/com/ktvmi/flinkops/counter/source/SourceFromSocketClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flink_Counter/src/main/java/Source/tumbMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Flink_Counter/src/main/java/com/ktvmi/flinkops/counter/mainfunc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flink_Counter/src/main/java/main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flink_Counter/target/classes/SocketWindowCount$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flink_Counter/target/classes/SocketWindowCount$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flink_Counter/target/classes/SocketWindowCount$WordWithCount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flink_Counter/target/classes/SocketWindowCount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flink_Counter/target/classes/Source/Custom/SourceFromSocket.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flink_Counter/target/classes/Source/Custom/SourceFromSocketClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flink_Counter/target/classes/Source/tumbMain$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flink_Counter/target/classes/Source/tumbMain$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flink_Counter/target/classes/Source/tumbMain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flink_Counter/target/classes/main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flink_Counter/target/classes/main$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flink_Counter/target/classes/main$WordWithCount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Flink_Counter/target/classes/main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/flinkquickstartjava_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Flink_Counter/.idea/artifacts/Flink_Counter_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/alpha/basicFJ/model/HelperClass/KeywordHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alpha/basicFJ/model/HelperClass/KeywordHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/alpha/basicFJ/model/Source/SourceFromSocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alpha/basicFJ/model/Source/SourceFromSocket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/alpha/basicFJ/model/HelperClass/KeywordHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/alpha/basicFJ/model/HelperClass/KeywordHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/alpha/basicFJ/model/Source/SourceFromSocket.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/alpha/basicFJ/model/Source/SourceFromSocket.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/java/com/ktvmi/flinkconfig/Common/AlarmHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/java/com/ktvmi/flinkconfig/Common/AlarmHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/java/com/ktvmi/flinkconfig/Controller/JobsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/java/com/ktvmi/flinkconfig/Controller/JobsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/java/com/ktvmi/flinkconfig/Controller/NacosController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/java/com/ktvmi/flinkconfig/Controller/NacosController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/alpha/basicFJ/MainFunc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ktvmi/finkops/filter/MainFunc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/alpha/basicFJ/model/EntityClass/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ktvmi/finkops/filter/entity/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/alpha/basicFJ/model/EntityClass/InputJsonBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ktvmi/finkops/filter/entity/InputJsonBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/alpha/basicFJ/model/HelperClass/HttpHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ktvmi/finkops/filter/helper/HttpHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/alpha/basicFJ/model/HelperClass/KeywordHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ktvmi/finkops/filter/helper/KeywordHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/alpha/basicFJ/model/HelperClass/ZipHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/alpha/basicFJ/model/Source/SourceFromSocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ktvmi/finkops/filter/source/KeyWordFlatMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/alpha/basicFJ/MainFunc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/alpha/basicFJ/model/EntityClass/Config.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/alpha/basicFJ/model/EntityClass/InputJsonBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/alpha/basicFJ/model/HelperClass/HttpHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/alpha/basicFJ/model/HelperClass/KeywordHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/alpha/basicFJ/model/HelperClass/ZipHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/alpha/basicFJ/model/Source/SourceFromSocket$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/alpha/basicFJ/model/Source/SourceFromSocket.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBoot_API_Center/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot_API_Center/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/java/com/ktvmi/flinkconfig/Common/AlarmHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/java/com/ktvmi/flinkops/apicenter/Common/AlarmHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/java/com/ktvmi/flinkconfig/Common/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/java/com/ktvmi/flinkops/apicenter/Common/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/java/com/ktvmi/flinkconfig/Common/NacosConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/java/com/ktvmi/flinkops/apicenter/Common/NacosConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/java/com/ktvmi/flinkconfig/Common/SMSUnits.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/java/com/ktvmi/flinkops/apicenter/Common/SMSUnits.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/java/com/ktvmi/flinkconfig/Controller/ConfigController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/java/com/ktvmi/flinkops/apicenter/Controller/ConfigController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/java/com/ktvmi/flinkconfig/Controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/java/com/ktvmi/flinkops/apicenter/Controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/java/com/ktvmi/flinkconfig/Controller/JobsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/java/com/ktvmi/flinkops/apicenter/Controller/JobsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/java/com/ktvmi/flinkconfig/Controller/NacosController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/java/com/ktvmi/flinkops/apicenter/Controller/NacosController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/java/com/ktvmi/flinkconfig/Controller/RulesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/java/com/ktvmi/flinkops/apicenter/Controller/RulesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/java/com/ktvmi/flinkconfig/EntityClass/AlarmConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/java/com/ktvmi/flinkops/apicenter/EntityClass/AlarmConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/java/com/ktvmi/flinkconfig/EntityClass/AlarmRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/java/com/ktvmi/flinkops/apicenter/EntityClass/AlarmRule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/java/com/ktvmi/flinkconfig/EntityClass/AlarmRuleMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/java/com/ktvmi/flinkops/apicenter/EntityClass/AlarmRuleMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/java/com/ktvmi/flinkconfig/EntityClass/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/java/com/ktvmi/flinkops/apicenter/EntityClass/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/java/com/ktvmi/flinkconfig/EntityClass/Count.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/java/com/ktvmi/flinkops/apicenter/EntityClass/Count.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/java/com/ktvmi/flinkconfig/EntityClass/CountsQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/java/com/ktvmi/flinkops/apicenter/EntityClass/CountsQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/java/com/ktvmi/flinkconfig/EntityClass/Greeting.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/java/com/ktvmi/flinkops/apicenter/EntityClass/Greeting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/java/com/ktvmi/flinkconfig/EntityClass/Job.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/java/com/ktvmi/flinkops/apicenter/EntityClass/Job.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/java/com/ktvmi/flinkconfig/EntityClass/ResponseMsg.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/java/com/ktvmi/flinkops/apicenter/EntityClass/ResponseMsg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/java/com/ktvmi/flinkconfig/EntityClass/Rule.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/java/com/ktvmi/flinkops/apicenter/EntityClass/Rule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/java/com/ktvmi/flinkconfig/EntityClass/WordWithCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/java/com/ktvmi/flinkops/apicenter/EntityClass/WordWithCount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/java/com/ktvmi/flinkconfig/FlinkconfigApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/java/com/ktvmi/flinkops/apicenter/FlinkconfigApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/java/com/ktvmi/flinkconfig/Repository/JobRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/java/com/ktvmi/flinkops/apicenter/Repository/JobRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/java/com/ktvmi/flinkconfig/Repository/RuleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/java/com/ktvmi/flinkops/apicenter/Repository/RuleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBoot_API_Center/src/test/java/com/ktvmi/flinkconfig/FlinkconfigApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot_API_Center/src/test/java/com/ktvmi/flinkops/apicenter/FlinkconfigApplicationTests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -28,10 +98,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/alpha/basicFJ/MainFunc.java">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="36" column="38" lean-forward="true" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+            <state relative-caret-position="496">
+              <caret line="140" column="21" selection-start-line="140" selection-start-column="21" selection-end-line="140" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ktvmi/finkops/filter/MainFunc.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="696">
+              <caret line="38" column="39" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -40,7 +119,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/alpha/basicFJ/model/HelperClass/ZipHelper.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/FirstFlink/FirstFlinkAnalysis.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="2" column="44" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/WordCount_Socket/SocketTextStreamWordCount.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="513">
+              <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ktvmi/finkops/filter/helper/ZipHelper.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="54">
               <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
@@ -49,23 +149,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/alpha/basicFJ/model/Source/SourceFromSocket.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ktvmi/finkops/filter/source/KeyWordFlatMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-86">
-              <caret line="35" column="31" lean-forward="true" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#close#0;class#SourceFromSocket#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/alpha/basicFJ/model/HelperClass/KeywordHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+            <state relative-caret-position="1053">
+              <caret line="39" column="11" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -74,10 +161,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/alpha/basicFJ/model/HelperClass/HttpHelper.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ktvmi/finkops/filter/helper/KeywordHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="15" column="69" selection-start-line="15" selection-start-column="69" selection-end-line="15" selection-end-column="69" />
+            <state relative-caret-position="54">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -86,23 +173,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/alpha/basicFJ/model/EntityClass/InputJsonBean.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ktvmi/finkops/filter/helper/HttpHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-27">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            <state relative-caret-position="162">
+              <caret line="14" column="69" selection-start-line="14" selection-start-column="69" selection-end-line="14" selection-end-column="69" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.11/1.8.0/flink-streaming-java_2.11-1.8.0-sources.jar!/org/apache/flink/streaming/api/functions/sink/SocketClientSink.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ktvmi/finkops/filter/entity/InputJsonBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1998">
-              <caret line="104" column="11" selection-start-line="104" selection-start-column="11" selection-end-line="104" selection-end-column="11" />
-              <folding>
-                <element signature="e#2827#2828#0" expanded="true" />
-                <element signature="e#2865#2866#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="297">
+              <caret line="11" column="26" selection-start-line="11" selection-end-line="11" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -110,15 +196,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.11/1.8.0/flink-streaming-java_2.11-1.8.0-sources.jar!/org/apache/flink/streaming/api/datastream/DataStream.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1146">
-              <caret line="1139" column="29" selection-start-line="1139" selection-start-column="29" selection-end-line="1139" selection-end-column="29" />
+            <state relative-caret-position="12960">
+              <caret line="608" column="86" selection-start-line="608" selection-start-column="4" selection-end-line="608" selection-end-column="86" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module_flinkquickstartjava.xml">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -138,6 +219,7 @@
       <find>writeToSocket</find>
       <find>coll</find>
       <find>nacos</find>
+      <find>flatMap</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -166,7 +248,6 @@
         <option value="$PROJECT_DIR$/src/main/java/alpha/basicFJ/model/EntityClass/Response.java" />
         <option value="$PROJECT_DIR$/src/main/java/alpha/basicFJ/model/EntityClass/InputJsonBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/alpha/basicFJ/model/EntityClass/Config.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/alpha/basicFJ/model/GlobalConfig.java" />
         <option value="$PROJECT_DIR$/src/test/java/javase/Generic.java" />
         <option value="$PROJECT_DIR$/src/test/java/FirstFlink/FirstFlinkAnalysis.java" />
@@ -175,11 +256,15 @@
         <option value="$PROJECT_DIR$/src/main/java/alpha/basicFJ/model/Sink/MySink/MySocketClientSink.java" />
         <option value="$PROJECT_DIR$/src/main/java/alpha/basicFJ/model/Sink/MySink/MyDataStream.java" />
         <option value="$PROJECT_DIR$/src/test/java/WordCount_Socket/SocketTextStreamWordCount.java" />
-        <option value="$PROJECT_DIR$/src/main/java/alpha/basicFJ/MainFunc.java" />
         <option value="$PROJECT_DIR$/src/test/java/WordCount_Socket/WindowWordCount.java" />
         <option value="$PROJECT_DIR$/src/main/java/alpha/basicFJ/model/HelperClass/HttpHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/alpha/basicFJ/model/HelperClass/KeywordHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/alpha/basicFJ/model/Source/SourceFromSocket.java" />
+        <option value="$PROJECT_DIR$/src/main/java/alpha/basicFJ/model/Source/KeyWordFlatMap.java" />
+        <option value="$PROJECT_DIR$/src/main/java/alpha/basicFJ/MainFunc.java" />
+        <option value="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ktvmi/finkops/filter/MainFunc.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -195,12 +280,7 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="flink-quickstart-java" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="flink-quickstart-java" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+          <item name="flink.filter" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
       </expand>
       <select />
@@ -219,7 +299,22 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="flinkquickstartjava" type="58d84e3e:PackageViewProjectNode" />
+              <item name="flinkquickstartjava" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="flinkquickstartjava" type="58d84e3e:PackageViewProjectNode" />
+              <item name="flinkquickstartjava" type="616d4139:PackageViewModuleNode" />
+              <item name="Libraries" type="5c3f07af:PackageViewLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -250,73 +345,11 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Flink_Filter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Flink_Filter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="basicFJ" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Flink_Filter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Flink_Filter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="basicFJ" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Flink_Filter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Flink_Filter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="basicFJ" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="EntityClass" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Flink_Filter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Flink_Filter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="basicFJ" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="HelperClass" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Flink_Filter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Flink_Filter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="basicFJ" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="Source" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="flinkquickstartjava" type="58d84e3e:PackageViewProjectNode" />
-              <item name="flinkquickstartjava" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="flinkquickstartjava" type="58d84e3e:PackageViewProjectNode" />
-              <item name="flinkquickstartjava" type="616d4139:PackageViewModuleNode" />
-              <item name="Libraries" type="5c3f07af:PackageViewLibrariesNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -326,14 +359,14 @@
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="flinkquickstartjava" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565787782308" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SpringBoot_API_Center" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566193860724" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.23240116" />
-    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -383,12 +416,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainFunc" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="C:/Program Files/Java/jdk-10.0.2" />
+    <configuration name="MainFunc" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="alpha.basicFJ.MainFunc" />
-      <module name="flink-quickstart-java" />
-      <option name="PROGRAM_PARAMETERS" value="192.168.1.130:8848 FlinkJob.1001.properties BaseService" />
+      <option name="MAIN_CLASS_NAME" value="com.ktvmi.finkops.filter.MainFunc" />
+      <module name="Flink_Filter" />
+      <option name="PROGRAM_PARAMETERS" value="127.0.0.1:8848 1001 127.0.0.1 9001" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="alpha.basicFJ.model.HelperClass.*" />
@@ -401,7 +434,7 @@
     </configuration>
     <configuration name="SocketTextStreamWordCount" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="WordCount_Socket.SocketTextStreamWordCount" />
-      <module name="flinkquickstartjava" />
+      <module name="Flink_Filter" />
       <option name="PROGRAM_PARAMETERS" value="127.0.0.1 9000" />
       <extension name="coverage">
         <pattern>
@@ -443,17 +476,16 @@
     </configuration>
     <list>
       <item itemvalue="Application.SocketTextStreamWordCount" />
-      <item itemvalue="Application.FirstFlinkAnalysis" />
       <item itemvalue="Application.MainFunc" />
+      <item itemvalue="Application.FirstFlinkAnalysis" />
       <item itemvalue="Application.Generic" />
       <item itemvalue="Application.TupleDemo" />
       <item itemvalue="Application.WindowWordCount" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MainFunc" />
-        <item itemvalue="Application.WindowWordCount" />
         <item itemvalue="Application.FirstFlinkAnalysis" />
+        <item itemvalue="Application.WindowWordCount" />
         <item itemvalue="Application.TupleDemo" />
         <item itemvalue="Application.Generic" />
       </list>
@@ -497,12 +529,21 @@
       <workItem from="1565171049565" duration="1407000" />
       <workItem from="1565606669031" duration="864000" />
       <workItem from="1565747233799" duration="4965000" />
-      <workItem from="1565838847564" duration="4836000" />
+      <workItem from="1565838847564" duration="7442000" />
+      <workItem from="1565918345832" duration="1553000" />
+      <workItem from="1565935486241" duration="1127000" />
+      <workItem from="1565938881614" duration="115000" />
+      <workItem from="1565939823311" duration="613000" />
+      <workItem from="1565942507286" duration="618000" />
+      <workItem from="1565944150223" duration="1031000" />
+      <workItem from="1566176506253" duration="2503000" />
+      <workItem from="1566185913072" duration="2785000" />
+      <workItem from="1566194283809" duration="1740000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="143376000" />
+    <option name="totallyTimeSpent" value="158067000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -515,9 +556,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7502812" visible="true" weight="0.14285715" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7502812" visible="true" weight="0.13486141" />
       <window_info id="Structure" order="1" sideWeight="0.24971879" side_tool="true" weight="0.25042883" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -526,7 +566,39 @@
       <window_info id="Favorites" order="6" sideWeight="0.28524047" side_tool="true" weight="0.15565032" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946696" weight="0.32925472" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.85394454" visible="true" weight="0.32962137" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.85394454" weight="0.33184856" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49520257" weight="0.40303358" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="6" weight="0.32962137" />
+      <window_info anchor="bottom" id="TODO" order="7" sideWeight="0.49946696" weight="0.32850778" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4968017" weight="0.32850778" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50479746" weight="0.24498886" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.48720682" weight="0.19153675" />
+      <window_info anchor="bottom" id="Spring" order="13" weight="0.32850778" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" visible="true" weight="0.04957356" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" visible="true" weight="0.19029851" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7502812" weight="0.24014337" />
+      <window_info id="Structure" order="1" sideWeight="0.24971879" side_tool="true" weight="0.25042883" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.28524047" side_tool="true" weight="0.15565032" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946696" weight="0.32925472" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.85394454" visible="true" weight="0.33295837" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49520257" weight="0.40303358" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -547,80 +619,12 @@
       <window_info anchor="right" id="Maven" order="6" weight="0.03731343" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
-    </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22068231" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Spring" order="0" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" sideWeight="0.49946696" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.85394454" weight="0.38244852" />
-      <window_info active="true" anchor="bottom" id="Debug" order="4" sideWeight="0.49520257" visible="true" weight="0.40303358" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="7" sideWeight="0.49946696" weight="0.32936078" />
-      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4968017" weight="0.32936078" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50479746" side_tool="true" visible="true" weight="0.40303358" />
-      <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.48720682" weight="0.1928494" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Maven" order="6" visible="true" weight="0.03731343" />
-      <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/FirstFlink/Config.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/javase.Generic">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>javase.Generic</OriginalElement>
-          <nodes>
-            <node x="" y="">alpha.basicFJ.model.HelperClass.ZipHelper</node>
-            <node x="" y="">javase.Generic</node>
-            <node x="" y="">alpha.basicFJ.model.GlobalConfig</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="46.0" y="15.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Fields</Category>
-            <Category>Constructors</Category>
-            <Category>Methods</Category>
-            <Category>Properties</Category>
-            <Category>Inner Classes</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
     <entry file="uml://JAVA/alpha.basicFJ.MainFunc.jsonOperator">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -767,50 +771,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="137" column="17" selection-start-line="137" selection-start-column="17" selection-end-line="137" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/org.apache.flink.streaming.api.environment.StreamExecutionEnvironment">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>org.apache.flink.streaming.api.environment.StreamExecutionEnvironment</OriginalElement>
-          <nodes>
-            <node x="" y="">org.apache.flink.annotation.Public</node>
-            <node x="" y="">org.apache.flink.streaming.api.environment.StreamExecutionEnvironment</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="108.0" y="55.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/alpha.basicFJ.MainFunc">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>alpha.basicFJ.MainFunc</OriginalElement>
-          <nodes>
-            <node x="" y="">alpha.basicFJ.MainFunc</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="52.0" y="15.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/util/List.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.11/1.8.0/flink-streaming-java_2.11-1.8.0.jar!/org/apache/flink/streaming/api/environment/StreamExecutionEnvironment.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="158">
@@ -947,13 +908,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/nacos/nacos-api/0.2.1-RC1/nacos-api-0.2.1-RC1.jar!/com/alibaba/nacos/api/config/ConfigService.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -964,24 +918,113 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/alpha/basicFJ/model/EntityClass/Config.java">
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/util/Properties.java" />
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/util/regex/Matcher.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.11/1.8.0/flink-streaming-java_2.11-1.8.0-sources.jar!/org/apache/flink/streaming/api/functions/sink/SocketClientSink.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-54">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        <state relative-caret-position="1998">
+          <caret line="104" column="11" selection-start-line="104" selection-start-column="11" selection-end-line="104" selection-end-column="11" />
+          <folding>
+            <element signature="e#2827#2828#0" expanded="true" />
+            <element signature="e#2865#2866#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/util/Properties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2511">
-          <caret line="138" column="6" selection-start-line="138" selection-start-column="6" selection-end-line="138" selection-end-column="6" />
+    <entry file="file://$PROJECT_DIR$/module_flinkquickstartjava.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="uml://JAVA/org.apache.flink.streaming.api.environment.StreamExecutionEnvironment">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>org.apache.flink.streaming.api.environment.StreamExecutionEnvironment</OriginalElement>
+          <nodes>
+            <node x="178.0" y="0.0">org.apache.flink.annotation.Public</node>
+            <node x="0.0" y="80.0">org.apache.flink.streaming.api.environment.StreamExecutionEnvironment</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="org.apache.flink.streaming.api.environment.StreamExecutionEnvironment" target="org.apache.flink.annotation.Public">
+              <point x="0.0" y="-176.5" />
+              <point x="0.0" y="15.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-479.0" y="34.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Inner Classes</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/java.base/java/util/regex/Matcher.java">
+    <entry file="uml://JAVA/alpha.basicFJ.MainFunc">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>alpha.basicFJ.MainFunc</OriginalElement>
+          <nodes>
+            <node x="" y="">alpha.basicFJ.MainFunc</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="52.0" y="15.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+            <Category>Properties</Category>
+            <Category>Inner Classes</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.11/1.8.0/flink-streaming-java_2.11-1.8.0-sources.jar!/org/apache/flink/streaming/api/environment/StreamExecutionEnvironment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="1654" column="18" selection-start-line="1654" selection-start-column="18" selection-end-line="1654" selection-end-column="18" />
+        <state relative-caret-position="31212">
+          <caret line="1273" column="79" selection-start-line="1273" selection-start-column="52" selection-end-line="1273" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ktvmi/finkops/filter/entity/Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="12" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/FirstFlink/HttpHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="45" selection-start-line="1" selection-start-column="45" selection-end-line="1" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="140" column="21" selection-start-line="140" selection-start-column="21" selection-end-line="140" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/FirstFlink/FirstFlinkAnalysis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="44" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -995,95 +1038,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/FirstFlink/FirstFlinkAnalysis.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.11/1.8.0/flink-streaming-java_2.11-1.8.0-sources.jar!/org/apache/flink/streaming/api/functions/sink/SocketClientSink.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1998">
-          <caret line="104" column="11" selection-start-line="104" selection-start-column="11" selection-end-line="104" selection-end-column="11" />
-          <folding>
-            <element signature="e#2827#2828#0" expanded="true" />
-            <element signature="e#2865#2866#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.11/1.8.0/flink-streaming-java_2.11-1.8.0-sources.jar!/org/apache/flink/streaming/api/environment/StreamExecutionEnvironment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1974">
-          <caret line="1273" column="36" selection-start-line="1273" selection-start-column="36" selection-end-line="1273" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.11/1.8.0/flink-streaming-java_2.11-1.8.0-sources.jar!/org/apache/flink/streaming/api/datastream/DataStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1146">
-          <caret line="1139" column="29" selection-start-line="1139" selection-start-column="29" selection-end-line="1139" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module_flinkquickstartjava.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/alpha/basicFJ/model/HelperClass/HttpHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="15" column="69" selection-start-line="15" selection-start-column="69" selection-end-line="15" selection-end-column="69" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/alpha/basicFJ/model/EntityClass/InputJsonBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-27">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/alpha/basicFJ/MainFunc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="36" column="38" lean-forward="true" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/alpha/basicFJ/model/HelperClass/ZipHelper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ktvmi/finkops/filter/helper/ZipHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/alpha/basicFJ/model/HelperClass/KeywordHelper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ktvmi/finkops/filter/helper/KeywordHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+        <state relative-caret-position="54">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/alpha/basicFJ/model/Source/SourceFromSocket.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ktvmi/finkops/filter/helper/HttpHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-86">
-          <caret line="35" column="31" lean-forward="true" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
+        <state relative-caret-position="162">
+          <caret line="14" column="69" selection-start-line="14" selection-start-column="69" selection-end-line="14" selection-end-column="69" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#close#0;class#SourceFromSocket#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ktvmi/finkops/filter/entity/InputJsonBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="26" selection-start-line="11" selection-end-line="11" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.11/1.8.0/flink-streaming-java_2.11-1.8.0-sources.jar!/org/apache/flink/streaming/api/datastream/DataStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12960">
+          <caret line="608" column="86" selection-start-line="608" selection-start-column="4" selection-end-line="608" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ktvmi/finkops/filter/MainFunc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="696">
+          <caret line="38" column="39" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ktvmi/finkops/filter/source/KeyWordFlatMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1053">
+          <caret line="39" column="11" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1095,13 +1106,13 @@
         <settings>
           <artifact-editor>
             <show-content>
-              <type id="artifact" />
-              <type id="javaee-facet-resources" />
               <type id="library" />
+              <type id="javaee-facet-resources" />
               <type id="jpa-descriptors" />
+              <type id="artifact" />
             </show-content>
           </artifact-editor>
-          <last-edited>flinkquickstartjava:jar</last-edited>
+          <last-edited>Filter:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1150,7 +1161,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>flink-quickstart-java</last-edited>
+          <last-edited>Flink_Filter</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1174,5 +1185,12 @@
         </settings>
       </state>
     </states>
+  </component>
+  <component name="mavenExecuteGoalHistory">
+    <option value="$PROJECT_DIR$" />
+    <option value="clean package" />
+    <option value="clean package -Dmaven.test.skip=true" />
+    <option value="clean" />
+    <option value="maven clean" />
   </component>
 </project>

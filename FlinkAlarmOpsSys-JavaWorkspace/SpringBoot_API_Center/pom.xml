@@ -11,6 +11,7 @@
     <groupId>com.ktvmi</groupId>
     <artifactId>flinkconfig</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+
     <name>flinkconfig</name>
     <description>Flink app's config RESTful API project for Spring Boot</description>
 
@@ -65,7 +66,7 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
+    <packaging>jar</packaging>
     <build>
         <plugins>
             <plugin>
