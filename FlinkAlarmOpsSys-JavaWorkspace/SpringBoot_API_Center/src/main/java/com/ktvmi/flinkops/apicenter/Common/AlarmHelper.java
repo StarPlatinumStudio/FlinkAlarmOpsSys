@@ -72,7 +72,7 @@ public class AlarmHelper {
         int ruleCounts=alarmRule.getCounts();
         if(queue.isAlarm(timeWindow,ruleCounts)) {
             SMSUnits smsUnits=new SMSUnits();
-            System.out.println("警报规则{"+alarmRule.getRulecontent()+"}目前发生频率超过"+timeWindow+"分钟"+ruleCounts+"次，已经达到预警阀值。报警短信已发送至号码为18250156433的手机，请留意。PS:一小时内警报最多发送五次。\n短信编号：："+smsUnits.sendGet("18250156433"));
+            System.out.println("警报规则{"+alarmRule.getRulecontent()+"}目前发生频率超过"+timeWindow+"分钟"+ruleCounts+"次，已经达到预警阀值。报警短信已发送至号码为的手机，请留意。PS:一小时内警报最多发送五次。\n短信编号：："+smsUnits.sendGet(""));
         }
     }
     private ResponseMsg configPublich(HashMap<String,AlarmRule> alarmRuleHashMap){

@@ -7,9 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="272cceaa-ae7f-4b63-9b7f-00a631fa31de" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SNAPSHOT/flink.config-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../SNAPSHOT/flink.config-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/java/com/ktvmi/flinkops/apicenter/Common/SMSUnits.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot_API_Center/src/main/java/com/ktvmi/flinkops/apicenter/Common/SMSUnits.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -460,12 +462,12 @@
       <workItem from="1565944150223" duration="1031000" />
       <workItem from="1566176506253" duration="2503000" />
       <workItem from="1566185913072" duration="2785000" />
-      <workItem from="1566194283809" duration="2004000" />
+      <workItem from="1566194283809" duration="2557000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="158331000" />
+    <option name="totallyTimeSpent" value="158884000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">

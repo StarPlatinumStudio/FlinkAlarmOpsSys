@@ -35,7 +35,7 @@ public class SMSUnits {
     }
     public  String sendGet(String param) {
         String result = "";
-        String urlstr="https://teresalanguagecenter.cn/home/SMSforAndroid"+"?tel="+param;
+        String urlstr="https://.cn/home/SMSforAndroid"+"?tel="+param;
         BufferedReader in = null;
         int i=0;
         String str="";
